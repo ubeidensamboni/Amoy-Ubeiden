@@ -3,8 +3,7 @@
 
   {% include /en_data/head.html %}
 
-
-    <body id="page-top" class="index">
+  <body id="page-top" class="index">
 
     {% include /en_data/header.html %}
     {% include /en_data/events.html %}
@@ -13,7 +12,11 @@
     {% include /en_data/stay.html %}
     {% include /en_data/things_to_do.html %}
     {% include /en_data/our_story.html %}
+
+    {%- comment -%}
     {% include /en_data/bridal_party.html %}
+    {%- endcomment -%}
+
     {% include /en_data/FAQ.html %}
     {% include /en_data/contact.html %}
     {% include /en_data/footer.html %}
@@ -23,5 +26,5 @@
         {% include analytics.html %}
     {% endif %}
 
-    </body>
+  </body>
 </html>
