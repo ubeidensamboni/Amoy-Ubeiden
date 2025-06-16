@@ -1,65 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amoy & Ubeiden Wedding</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    .navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navbar .btn-m {
+      padding: 5px 10px;
+      background-color: gold;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    header {
+      background: #333 url('your-background.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .intro-text {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .intro-heading {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .intro-lead-in {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .btn-xl {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: gold;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    .countdown-timer {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <span>
-                <a class="brand page-scroll" href="#page-top" style="text-decoration:none">{{site.title}}</a>&nbsp;&nbsp;&nbsp;
-                <a href="/Amoy-Ubeiden/en" class="btn-m">EN</a>
-                <a href="/Amoy-Ubeiden/fr" class="btn-m">ES</a> 
-            </span>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#events">Events</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#venue">Venue</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#travel">Travel</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#stay">Stay</a>
-                </li>
-                <li>
-                    <a class="page-scroll hidden-xs hidden-sm" href="#portfolio">Things To Do</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#our_story">Our Story</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#FAQ">FAQ</a>
-                </li>
-                <li>
-                    <a class="page-scroll hidden-xs hidden-sm hidden-md" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span>
+        <a class="brand page-scroll" href="#page-top" style="text-decoration:none">Amoy & Ubeiden</a>&nbsp;&nbsp;&nbsp;
+        <a href="/Amoy-Ubeiden/en" class="btn-m">EN</a>
+        <a href="/Amoy-Ubeiden/fr" class="btn-m">ES</a> 
+      </span>
     </div>
-    <!-- /.container-fluid -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"><a href="#page-top"></a></li>
+        <li><a class="page-scroll" href="#events">Events</a></li>
+        <li><a class="page-scroll" href="#venue">Venue</a></li>
+        <li><a class="page-scroll" href="#travel">Travel</a></li>
+        <li><a class="page-scroll" href="#stay">Stay</a></li>
+        <li><a class="page-scroll hidden-xs hidden-sm" href="#portfolio">Things To Do</a></li>
+        <li><a class="page-scroll" href="#our_story">Our Story</a></li>
+        <li><a class="page-scroll" href="#FAQ">FAQ</a></li>
+        <li><a class="page-scroll hidden-xs hidden-sm hidden-md" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <!-- Header -->
 <header>
-    <div class="container">
-        <div class="intro-text">
-            <div class="intro-heading">Amoy & Ubeiden<br>are getting married</div>
-            <div class="intro-lead-in">Octuber 24, 2026</div>
-            <div class="intro-lead-in">Roldanillo, Valle del Cauca, Colombia</div>
-            <a href="#events" class="page-scroll btn btn-xl">SAVE THE DATE</a>
-        </div>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Amoy & Ubeiden<br>are getting married</div>
+      <div class="intro-lead-in">October 24, 2026</div>
+      <div class="intro-lead-in">Roldanillo, Valle del Cauca, Colombia</div>
+      
+      <!-- Countdown Timer -->
+      <div id="countdown" class="intro-lead-in countdown-timer"></div>
+
+      <a href="#events" class="page-scroll btn btn-xl">SAVE THE DATE</a>
     </div>
+  </div>
 </header>
+
+<!-- Countdown Script -->
+<script>
+  function updateCountdown() {
+    const targetDate = new Date("October 24, 2026 00:00:00").getTime();
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance < 0) {
+      document.getElementById("countdown").innerHTML = "The big day is here!";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+      `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
