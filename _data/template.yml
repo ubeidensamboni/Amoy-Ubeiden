@@ -1,7 +1,7 @@
 # Color settings (hex-codes without the leading hashtag)
 color:
-  primary: ee0a0a # ffc300
-  secondary: fac412   
+  primary: f3b806  ###Color golden background icons, highlight headers
+  secondary: f30606 # fac412   
   secondary-dark: 333
   muted: 777
 
