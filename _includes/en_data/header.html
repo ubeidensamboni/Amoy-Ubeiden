@@ -62,11 +62,9 @@
       display: inline-block;
     }
 
-    .countdown-timer {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 20px;
-      color: #fff;
+    .countdown-embed {
+      max-width: 800px;
+      margin: 40px auto 20px;
     }
   </style>
 </head>
@@ -112,39 +110,35 @@
       <div class="intro-heading">Amoy & Ubeiden<br>are getting married</div>
       <div class="intro-lead-in">October 24, 2026</div>
       <div class="intro-lead-in">Roldanillo, Valle del Cauca, Colombia</div>
-      
-      <!-- Countdown Timer -->
-      <div id="countdown" class="intro-lead-in countdown-timer"></div>
+
+      <!-- TickCounter Countdown Embed -->
+      <div class="countdown-embed">
+        <script>
+          (function(d, s, id) {
+            var js, pjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//www.tickcounter.com/static/js/loader.js";
+            pjs.parentNode.insertBefore(js, pjs);
+          }(document, "script", "tickcounter-sdk"));
+        </script>
+        <a 
+          data-type="countdown" 
+          data-id="7153193" 
+          class="tickcounter" 
+          style="display:block; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto;" 
+          title="Wedding Countdown" 
+          href="//www.tickcounter.com/"
+        >
+          Wedding Countdown
+        </a>
+      </div>
 
       <a href="#events" class="page-scroll btn btn-xl">SAVE THE DATE</a>
     </div>
   </div>
 </header>
-
-<!-- Countdown Script -->
-<script>
-  function updateCountdown() {
-    const targetDate = new Date("October 24, 2026 00:00:00").getTime();
-    const now = new Date().getTime();
-    const distance = targetDate - now;
-
-    if (distance < 0) {
-      document.getElementById("countdown").innerHTML = "The big day is here!";
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("countdown").innerHTML =
-      `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
-  }
-
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-</script>
 
 </body>
 </html>
