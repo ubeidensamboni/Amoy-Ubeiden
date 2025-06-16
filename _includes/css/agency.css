@@ -142,7 +142,7 @@ fieldset[disabled] .btn-primary.active {
     font-size: 34px;
     font-weight: 700;
     color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: #ae2029;
 }
 
 .btn-xl:hover,
