@@ -1,7 +1,7 @@
 # Color settings (hex-codes without the leading hashtag)
 color:
   primary: f3b806  ###Color golden background icons, menu-highlight headers, hyperlink
-  secondary: ec3105 # probando rojo, dejar -->d4af37   
+  secondary: d4af37   ####menu-highlight headers navigator
   secondary-dark: 333
   muted: 777
 
