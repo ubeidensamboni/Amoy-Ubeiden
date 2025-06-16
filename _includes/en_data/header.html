@@ -28,12 +28,16 @@
     }
 
     header {
-      background: #333 url('/Amoy-Ubeiden/img/backgrounds/header.gif') no-repeat center center;
-      background-size: cover;
-      color: white;
-      text-align: center;
-      padding: 100px 0;
-    }
+  background-image: url('/Amoy-Ubeiden/img/backgrounds/header.gif');
+  background-size: cover;              /* Makes the image cover the whole area */
+  background-repeat: no-repeat;
+  background-position: center center;  /* Center the image */
+  background-attachment: fixed;        /* Optional: creates parallax effect */
+  color: white;
+  text-align: center;
+  padding: 100px 20px;                 /* Add side padding for small screens */
+}
+
 
     .intro-text {
       max-width: 600px;
