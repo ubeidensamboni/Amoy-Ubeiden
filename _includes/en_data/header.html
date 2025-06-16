@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amoy & Ubeiden Wedding</title>
+  <link rel="stylesheet" href="styles.css" />
 
   <style>
     body {
@@ -15,7 +16,6 @@
     .navbar {
       background-color: #fff;
       border-bottom: 1px solid #ddd;
-      padding: 10px 20px;
     }
 
     .navbar .btn-m {
@@ -27,12 +27,12 @@
       margin-left: 5px;
     }
 
-    .intro-section, .save-the-date {
+    header {
       background: #333 url('your-background.jpg') no-repeat center center;
       background-size: cover;
       color: white;
       text-align: center;
-      padding: 100px 20px;
+      padding: 100px 0;
     }
 
     .intro-text {
@@ -68,16 +68,6 @@
       margin-top: 20px;
       color: #fff;
     }
-
-    section {
-      padding: 60px 20px;
-    }
-
-    .section-title {
-      font-size: 32px;
-      text-align: center;
-      margin-bottom: 40px;
-    }
   </style>
 </head>
 <body>
@@ -85,71 +75,74 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-    <div class="navbar-header">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <span>
-        <a class="brand" href="#page-top" style="text-decoration:none">Amoy & Ubeiden</a>
+        <a class="brand page-scroll" href="#page-top" style="text-decoration:none">Amoy & Ubeiden</a>&nbsp;&nbsp;&nbsp;
         <a href="/Amoy-Ubeiden/en" class="btn-m">EN</a>
         <a href="/Amoy-Ubeiden/fr" class="btn-m">ES</a> 
       </span>
     </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"><a href="#page-top"></a></li>
+        <li><a class="page-scroll" href="#events">Events</a></li>
+        <li><a class="page-scroll" href="#venue">Venue</a></li>
+        <li><a class="page-scroll" href="#travel">Travel</a></li>
+        <li><a class="page-scroll" href="#stay">Stay</a></li>
+        <li><a class="page-scroll hidden-xs hidden-sm" href="#portfolio">Things To Do</a></li>
+        <li><a class="page-scroll" href="#our_story">Our Story</a></li>
+        <li><a class="page-scroll" href="#FAQ">FAQ</a></li>
+        <li><a class="page-scroll hidden-xs hidden-sm hidden-md" href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
-<!-- Welcome Section -->
-<header class="intro-section" id="welcome">
-  <div class="intro-text">
-    <div class="intro-heading">Amoy & Ubeiden<br>are getting married</div>
-    <div class="intro-lead-in">October 24, 2026</div>
-    <div class="intro-lead-in">Roldanillo, Valle del Cauca, Colombia</div>
-    <div id="countdown1" class="intro-lead-in countdown-timer"></div>
-    <a href="#save-the-date" class="btn-xl">SAVE THE DATE</a>
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Amoy & Ubeiden<br>are getting married</div>
+      <div class="intro-lead-in">October 24, 2026</div>
+      <div class="intro-lead-in">Roldanillo, Valle del Cauca, Colombia</div>
+      
+      <!-- Countdown Timer -->
+      <div id="countdown" class="intro-lead-in countdown-timer"></div>
+
+      <a href="#events" class="page-scroll btn btn-xl">SAVE THE DATE</a>
+    </div>
   </div>
 </header>
 
-<!-- Save the Date Section -->
-<section class="save-the-date" id="save-the-date">
-  <div class="intro-text">
-    <div class="intro-heading">Save the Date!</div>
-    <div class="intro-lead-in">We're counting down to the big day</div>
-    <div id="countdown2" class="countdown-timer"></div>
-    <a href="#events" class="btn-xl">SEE THE EVENTS</a>
-  </div>
-</section>
-
-<!-- Events Section Placeholder -->
-<section id="events">
-  <h2 class="section-title">Events</h2>
-  <p style="text-align: center;">(Event details go here...)</p>
-</section>
-
 <!-- Countdown Script -->
 <script>
-  function startCountdown(id, targetDateStr) {
-    const countdownEl = document.getElementById(id);
-    function update() {
-      const now = new Date().getTime();
-      const targetDate = new Date(targetDateStr).getTime();
-      const distance = targetDate - now;
+  function updateCountdown() {
+    const targetDate = new Date("October 24, 2026 00:00:00").getTime();
+    const now = new Date().getTime();
+    const distance = targetDate - now;
 
-      if (distance < 0) {
-        countdownEl.innerHTML = "The big day is here!";
-        return;
-      }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      countdownEl.innerHTML = `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+    if (distance < 0) {
+      document.getElementById("countdown").innerHTML = "The big day is here!";
+      return;
     }
 
-    update();
-    setInterval(update, 1000);
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+      `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
   }
 
-  startCountdown("countdown1", "October 24, 2026 00:00:00");
-  startCountdown("countdown2", "October 24, 2026 00:00:00");
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
 </script>
 
 </body>
