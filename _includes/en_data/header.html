@@ -29,14 +29,17 @@
 
     header {
   background-image: url('/Amoy-Ubeiden/img/backgrounds/header.gif');
-  background-size: cover;              /* Makes the image cover the whole area */
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;  /* Center the image */
-  background-attachment: fixed;        /* Optional: creates parallax effect */
+  background-position: center center;
+  background-attachment: fixed;
   color: white;
   text-align: center;
-  padding: 100px 20px;                 /* Add side padding for small screens */
+  padding: 100px 20px;
+  position: relative; /* <-- ADD THIS */
+  overflow: hidden;   /* Optional: hides any overflow */
 }
+
 
 
     .intro-text {
