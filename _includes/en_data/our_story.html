@@ -1,81 +1,101 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Include the Imperial Script font -->
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
     <style>
-        .rowstory {
-          display: flex;
-          flex-wrap: wrap;
-          padding: 0 4px;
-        }
+      .rowstory {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
 
-        /* Create four equal columns that sits next to each other */
+      .columnstory {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .columnstory img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 800px) {
         .columnstory {
-          flex: 25%;
-          max-width: 25%;
-          padding: 0 4px;
+          flex: 50%;
+          max-width: 50%;
         }
+      }
 
-        .columnstory img {
-          margin-top: 8px;
-          vertical-align: middle;
-          width: 100%;
+      @media screen and (max-width: 600px) {
+        .columnstory {
+          flex: 100%;
+          max-width: 100%;
         }
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 800px) {
-          .columnstory {
-            flex: 50%;
-            max-width: 50%;
-          }
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-          .columnstory {
-            flex: 100%;
-            max-width: 100%;
-          }
-        }
+      }
     </style>
+  </head>
 
+  <body>
     <!-- Our Story Section -->
     <section id="our_story" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Story</h2>
-                </div>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="largepad text-muted">This phrase and this date mark the beginning of our lives together. The thousands of kilometers were never an obstacle. In the first few months, like new lovebirds, we explored each other's likes, disagreements, and peculiarities. After some time, we decided to date virtually. After almost two years, we saw each other physically for the first time, and the chemistry went to another level. We were legally married on December 14, 2024, in London, UK, and we can't wait to do it again with a traditional ceremony with our families and friends.
-We hope to see you soon!
-                </p>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Our Story</h2>
+          </div>
         </div>
-        <div class="rowstory">
-            <div class="columnstory">
-            	<img src="/Amoy-Ubeiden/img/story/col1-row1.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col1-row2.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col1-row3.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col1-row4.jpg">
-            </div>
-            <div class="columnstory">
-                <img src="/Amoy-Ubeiden/img/story/col2-row1.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col2-row2.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col2-row3.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col2-row4.jpg">
-            </div>
-            <div class="columnstory">
-            	<img src="/Amoy-Ubeiden/img/story/col3-row1.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col3-row2.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col3-row3.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col3-row4.jpg">
-            </div>
-            <div class="columnstory">
-            	<img src="/Amoy-Ubeiden/img/story/col4-row1.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col4-row2.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col4-row3.jpg">
-                <img src="/Amoy-Ubeiden/img/story/col4-row4.jpg">
-            </div>
+
+        <!-- 🖋️ Imperial Script Phrase -->
+        <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top: 30px;">
+          <p style="
+            font-family: 'Imperial Script', cursive;
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 40px;
+          ">
+            "When the whole world fell apart, our hearts found each other forever"
+          </p>
         </div>
+
+        <!-- Regular Paragraph -->
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <p class="largepad text-muted">
+            This phrase and this date mark the beginning of our lives together. The thousands of kilometers were never an obstacle. In the first few months, like new lovebirds, we explored each other's likes, disagreements, and peculiarities. After some time, we decided to date virtually. After almost two years, we saw each other physically for the first time, and the chemistry went to another level. We were legally married on December 14, 2024, in London, UK, and we can't wait to do it again with a traditional ceremony with our families and friends.
+            We hope to see you soon!
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Grid -->
+      <div class="rowstory">
+        <div class="columnstory">
+          <img src="/Amoy-Ubeiden/img/story/col1-row1.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col1-row2.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col1-row3.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col1-row4.jpg">
+        </div>
+        <div class="columnstory">
+          <img src="/Amoy-Ubeiden/img/story/col2-row1.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col2-row2.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col2-row3.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col2-row4.jpg">
+        </div>
+        <div class="columnstory">
+          <img src="/Amoy-Ubeiden/img/story/col3-row1.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col3-row2.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col3-row3.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col3-row4.jpg">
+        </div>
+        <div class="columnstory">
+          <img src="/Amoy-Ubeiden/img/story/col4-row1.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col4-row2.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col4-row3.jpg">
+          <img src="/Amoy-Ubeiden/img/story/col4-row4.jpg">
+        </div>
+      </div>
     </section>
+  </body>
 </html>
