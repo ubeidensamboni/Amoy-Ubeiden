@@ -134,12 +134,12 @@ fieldset[disabled] .btn-primary.active {
 }
 /* Botton Save the Day in Welcome /* */
 .btn-xl {
-    padding: 20px 40px;
+    padding: 25px 50px;
     border-color: #{{ site.data.template.color.primary }};
-    border-radius: 3px;
+    border-radius: 6px;
      /* text-transform: uppercase;  */ /* ← removed */ 
     font-family: {{ site.data.template.font.primary }};
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 700;
     color: #fff;
     background-color: #{{ site.data.template.color.primary }};
