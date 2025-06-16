@@ -139,7 +139,7 @@ fieldset[disabled] .btn-primary.active {
     border-radius: 3px;
      /* text-transform: uppercase;  */ /* ← removed */ 
     font-family: {{ site.data.template.font.primary }};
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     color: #fff;
     background-color: #{{ site.data.template.color.primary }};
