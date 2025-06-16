@@ -132,7 +132,7 @@ fieldset[disabled] .btn-primary.active {
     color: #{{ site.data.template.color.primary }};
     background-color: #fff;
 }
-
+/* Botton Save the Day in Welcome /* */
 .btn-xl {
     padding: 20px 40px;
     border-color: #{{ site.data.template.color.primary }};
