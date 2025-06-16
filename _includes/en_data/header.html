@@ -33,8 +33,12 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
+      /*background-position: top center;*/      /* This line is commented out; if used, it would align background image at the top center */
       background-attachment: scroll;
       color: white;
+      background-repeat: none;                   /* Prevents the background image from repeating (Note: usually `no-repeat` is used) */
+      -webkit-background-size: cover;            /* For Safari and older Chrome: scale background image to cover entire header */
+      -moz-background-size: cover;               /* For older Firefox: same as above */
       text-align: center;
       padding: 100px 20px;
       position: relative;
