@@ -1,9 +1,50 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <!-- Include the Imperial Script font -->
     <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
     <style>
+      /* 4 Images in a Row */
+      .four-images-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin: 30px 0;
+        padding: 0 15px;
+      }
+
+      .image-wrapper {
+        flex: 1;
+        padding: 0 5px;
+      }
+
+      .image-wrapper img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+      }
+
+      @media screen and (max-width: 768px) {
+        .four-images-row {
+          flex-wrap: wrap;
+        }
+
+        .image-wrapper {
+          flex: 0 0 50%;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .image-wrapper {
+          flex: 0 0 100%;
+        }
+      }
+
+      /* Old grid kept here in case you want it later */
       .rowstory {
         display: flex;
         flex-wrap: wrap;
@@ -59,15 +100,9 @@
             When the whole world fell apart, our hearts found each other forever.
           </p>
 
-                <p style="
-          font-size: 16px;
-          color: #555;
-          margin-bottom: 10px;
-          ">
-          –March 24, 2020–
-        </p>
-
-          
+          <p style="font-size: 16px; color: #555; margin-bottom: 10px;">
+            –March 24, 2020–
+          </p>
         </div>
 
         <!-- Regular Paragraph -->
@@ -79,16 +114,25 @@
         </div>
       </div>
 
-     <!-- 4 Images Row -->
-        <div class="four-images-row">
+      <!-- 4 Images Row (Horizontal) -->
+      <div class="four-images-row">
+        <div class="image-wrapper">
           <img src="/Amoy-Ubeiden/img/story/col1-row1.jpg" alt="Image 1">
+        </div>
+        <div class="image-wrapper">
           <img src="/Amoy-Ubeiden/img/story/col1-row2.jpg" alt="Image 2">
+        </div>
+        <div class="image-wrapper">
           <img src="/Amoy-Ubeiden/img/story/col1-row3.jpg" alt="Image 3">
+        </div>
+        <div class="image-wrapper">
           <img src="/Amoy-Ubeiden/img/story/col1-row4.jpg" alt="Image 4">
         </div>
-     
-      <!-- Image Grid -->
-     <!-- <div class="rowstory">
+      </div>
+
+      <!-- Image Grid (Commented Out) -->
+      <!--
+      <div class="rowstory">
         <div class="columnstory">
           <img src="/Amoy-Ubeiden/img/story/col1-row1.jpg">
           <img src="/Amoy-Ubeiden/img/story/col1-row2.jpg">
@@ -101,7 +145,8 @@
           <img src="/Amoy-Ubeiden/img/story/col2-row3.jpg">
           <img src="/Amoy-Ubeiden/img/story/col2-row4.jpg">
         </div>
-      </div> -->
+      </div>
+      -->
     </section>
   </body>
 </html>
