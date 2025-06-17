@@ -4,3 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     envelope.classList.toggle('opened');
   });
 });
+
+function openMainSite() {
+  const overlay = document.getElementById('invitation-overlay');
+  if (overlay) {
+    overlay.style.display = 'none';
+  }
+}
