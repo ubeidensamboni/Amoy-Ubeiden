@@ -5,67 +5,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
 
     <style>
-      /* 4 Images in a Row */
       .four-images-row {
         display: flex;
-        justify-content: center; /* 👈 Changed from space-between */
+        justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
         margin: 30px 0;
         padding: 0 15px;
       }
-      
+
       .image-wrapper {
         flex: 1;
+        max-width: 25%;
         padding: 0 5px;
-        max-width: 100%;
       }
-      
+
+      .image-wrapper img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+      }
+
       @media screen and (max-width: 768px) {
         .image-wrapper {
           flex: 0 0 50%;
           max-width: 50%;
-          margin-bottom: 10px;
         }
       }
 
       @media screen and (max-width: 480px) {
         .image-wrapper {
           flex: 0 0 100%;
-          max-width: 100%;
-        }
-      }
-
-
-      /* Old grid kept here in case you want it later */
-      .rowstory {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-      }
-
-      .columnstory {
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 4px;
-      }
-
-      .columnstory img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-      }
-
-      @media screen and (max-width: 800px) {
-        .columnstory {
-          flex: 50%;
-          max-width: 50%;
-        }
-      }
-
-      @media screen and (max-width: 600px) {
-        .columnstory {
-          flex: 100%;
           max-width: 100%;
         }
       }
@@ -122,7 +93,6 @@
           <img src="/Amoy-Ubeiden/img/story/4.jpg" alt="Image 4">
         </div>
       </div>
-
     </section>
   </body>
 </html>
