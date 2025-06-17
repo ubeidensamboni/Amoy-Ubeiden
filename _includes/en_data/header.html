@@ -14,8 +14,8 @@
     }
 
     .navbar {
-      background-color: #000000; /* black */
-      border-bottom: 1px solid #333333; /* dark gray border */
+      background-color: #000000;
+      border-bottom: 1px solid #333333;
     }
 
     .navbar .btn-m {
@@ -32,12 +32,8 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top center;
-      /*background-position: center center; */
       background-attachment: fixed;
       color: white;
-      background-repeat: none;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
       text-align: center;
       padding: 100px 20px;
       position: relative;
@@ -51,12 +47,11 @@
 
     .intro-heading {
       font-size: 48px;
-      /* font-weight: bold; */
-    }
-
-    .intro-lead-in {
-      font-size: 20px;
-      margin: 10px 0;
+      font-weight: normal;
+      line-height: 1.2;
+      color: white;
+      text-align: center;
+      white-space: nowrap;
     }
 
     .btn-xl {
@@ -76,7 +71,59 @@
       margin: 40px auto 20px;
     }
 
-    /* Jump animation for envelope icon */
+    /* Invitation Overlay */
+    #invitation-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #222; /* Dark gray */
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: white;
+    }
+
+    #invitation-overlay h2,
+    #invitation-overlay h1 {
+      font-weight: normal;
+      line-height: 1.2;
+      text-align: center;
+      white-space: nowrap;
+      color: white;
+    }
+
+    #invitation-overlay h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    #invitation-overlay h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    #invitation-overlay img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .jumping-envelope {
+      display: inline-block;
+      margin-right: 10px;
+      animation: jump 1s infinite;
+      font-size: 1.3em;
+      vertical-align: middle;
+    }
+
     @keyframes jump {
       0%, 100% {
         transform: translateY(0);
@@ -85,53 +132,27 @@
         transform: translateY(-10px);
       }
     }
-
-    /* Style for jumping envelope */
-    .jumping-envelope {
-      display: inline-block;
-      animation: jump 1s infinite;
-      font-size: 24px;
-      margin-right: 10px;
-      line-height: 1;
-    }
   </style>
 </head>
 <body>
 
 <!-- Invitation Overlay -->
-<div id="invitation-overlay" style="
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #fff;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px;
-">
-  <h2 style="font-size: 48px; margin-bottom: 10px; font-weight: normal;">
-    Wedding of
-  </h2>
-  <img src="/Amoy-Ubeiden/img/backgrounds/logo.png" alt="Couple Photo" style="width: 150px; height: auto; border-radius: 10px; margin-bottom: 15px;">
-  <h1 style="font-size: 48px; margin-bottom: 20px; font-weight: normal;">
-    Amoy & Ubeiden
-  </h1>
+<div id="invitation-overlay">
+  <h2>Wedding of</h2>
+  <img src="/Amoy-Ubeiden/img/backgrounds/logo.png" alt="Couple Photo">
+  <h1>Amoy & Ubeiden</h1>
   <button onclick="openMainSite()" style="
-    padding: 15px 30px; 
-    font-size: 20px; 
-    background-color: gold; 
-    color: white; 
-    border: none; 
-    border-radius: 30px; 
-    cursor: pointer; 
-    display: flex; 
-    align-items: center; 
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: gold;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   ">
     <span class="jumping-envelope" aria-hidden="true">📩</span>
     Open Invitation
@@ -150,8 +171,8 @@
       </button>
       <span>
         <a class="brand page-scroll" href="#page-top" style="text-decoration:none">
-        <img src="/Amoy-Ubeiden/img/backgrounds/logo.png" alt="Amoy & Ubeiden Logo" style="height: 50px;">
-        </a>;
+          <img src="/Amoy-Ubeiden/img/backgrounds/logo.png" alt="Amoy & Ubeiden Logo" style="height: 50px;">
+        </a>
         <a href="{{ site.baseurl }}/en" class="btn-m">EN</a>
         <a href="{{ site.baseurl }}/fr" class="btn-m">ES</a>
       </span>
@@ -163,10 +184,8 @@
         <li><a class="page-scroll" href="#our_story">Our Story</a></li>
         <li><a class="page-scroll" href="#events">Wedding Day</a></li>
         <li><a class="page-scroll" href="#travel">Travel & Stay</a></li>
-        <!--<li><a class="page-scroll hidden-xs hidden-sm hidden-md" href="#stay">Stay</a></li> -->
         <li><a class="page-scroll hidden-xs hidden-sm" href="#portfolio">Things To Do</a></li>
         <li><a class="page-scroll" href="#FAQ">FAQ</a></li>
-       <!-- <li><a class="page-scroll hidden-xs hidden-sm hidden-md" href="#contact">Contact</a></li>  -->
       </ul>
     </div>
   </div>
@@ -174,7 +193,6 @@
 
 <!-- Header -->
 <header>
-  <!-- Dark Overlay -->
   <div style="
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -185,14 +203,10 @@
     z-index: 1;">
   </div>
 
-  <!-- Main Content -->
   <div class="container" style="position: relative; z-index: 2;">
     <div class="intro-text">
       <div class="intro-heading">Amoy & Ubeiden<br>are getting married</div>
-      <!-- <div class="intro-lead-in">The Big Day!</div> -->
-      <!-- <div class="intro-lead-in">October 24, 2026</div> -->
 
-      <!-- TickCounter Countdown Embed -->
       <div class="countdown-embed">
         <script>
           (function(d, s, id) {
@@ -217,15 +231,14 @@
         </a>
       </div>
 
-      <a href="#saveDay" class="page-scroll btn btn-xl" style="background-color: #daa520; color: white; font-size: 30px; padding: 25px 50px; border-radius: 50px 50px 50px 50px;">
+      <a href="#saveDay" class="page-scroll btn btn-xl" style="background-color: #daa520; color: white; font-size: 30px; padding: 25px 50px; border-radius: 50px;">
         Save the Date!
       </a>
-
     </div>
   </div>
 </header>
 
-<!-- Add this script before closing body -->
+<!-- Overlay hide logic -->
 <script>
   function openMainSite() {
     const overlay = document.getElementById('invitation-overlay');
