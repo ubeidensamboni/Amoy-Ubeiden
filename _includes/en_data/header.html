@@ -29,21 +29,22 @@
     }
 
     header {
-      background-image: url('/Amoy-Ubeiden/img/backgrounds/welcome.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top center;
-      /*background-position: center center; */      /* This line is commented out; if used, it would align background image at the center center */
-      background-attachment: fixed;
-      color: white;
-      background-repeat: none;                   /* Prevents the background image from repeating (Note: usually `no-repeat` is used) */
-      -webkit-background-size: cover;            /* For Safari and older Chrome: scale background image to cover entire header */
-      -moz-background-size: cover;               /* For older Firefox: same as above */
-      text-align: center;
-      padding: 100px 20px;
-      position: relative;
-      overflow: hidden;
-    }
+  background-image: url('/Amoy-Ubeiden/img/backgrounds/welcome.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll; /* Fixed can be buggy on mobile */
+  color: white;
+  height: 100vh; /* Full screen height */
+  width: 100vw;  /* Optional: ensure full width */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0; /* Remove big padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
     .intro-text {
       max-width: 600px;
