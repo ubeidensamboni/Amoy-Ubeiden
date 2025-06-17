@@ -75,6 +75,25 @@
       max-width: 800px;
       margin: 40px auto 20px;
     }
+
+    /* Jump animation for envelope icon */
+    @keyframes jump {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Style for jumping envelope */
+    .jumping-envelope {
+      display: inline-block;
+      animation: jump 1s infinite;
+      font-size: 24px;
+      margin-right: 10px;
+      line-height: 1;
+    }
   </style>
 </head>
 <body>
@@ -98,7 +117,19 @@
   <h2 style="font-size: 36px; margin-bottom: 10px;">Wedding of</h2>
   <img src="/Amoy-Ubeiden/img/backgrounds/logo.png" alt="Couple Photo" style="width: 150px; height: auto; border-radius: 10px; margin-bottom: 15px;">
   <h1 style="font-size: 32px; margin-bottom: 20px;">Amoy & Ubeiden</h1>
-  <button onclick="openMainSite()" style="padding: 15px 30px; font-size: 20px; background-color: gold; color: white; border: none; border-radius: 30px; cursor: pointer;">
+  <button onclick="openMainSite()" style="
+    padding: 15px 30px; 
+    font-size: 20px; 
+    background-color: gold; 
+    color: white; 
+    border: none; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+  ">
+    <span class="jumping-envelope" aria-hidden="true">📩</span>
     Open Invitation
   </button>
 </div>
