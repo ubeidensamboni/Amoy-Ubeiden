@@ -28,29 +28,22 @@
       margin-left: 5px;
     }
 
-    <header>
-  <img src="/Amoy-Ubeiden/img/backgrounds/welcome.png" 
-       alt="Welcome" 
-       style="width: 100vw; height: 100vh; object-fit: cover; object-position: center;">
-  
-  <!-- Overlay + Text as absolutely positioned -->
-  <div style="
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-  ">
-    <h1 style="font-size: 3rem;">Amoy & Ubeiden<br>are getting married</h1>
-    <a href="#saveDay" class="btn-xl" style="margin-top: 20px;">Save the Date!</a>
-  </div>
-</header>
+   header {
+      background-image: url('/Amoy-Ubeiden/img/backgrounds/welcome.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      /*background-position: center center; */      /* This line is commented out; if used, it would align background image at the center center */
+      background-attachment: fixed;
+      color: white;
+      background-repeat: none;                   /* Prevents the background image from repeating (Note: usually no-repeat is used) */
+      -webkit-background-size: cover;            /* For Safari and older Chrome: scale background image to cover entire header */
+      -moz-background-size: cover;               /* For older Firefox: same as above */
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+      overflow: hidden;
+    }
 
 
 
