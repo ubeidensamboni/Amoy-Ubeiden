@@ -13,11 +13,10 @@
       background-color: #f8f8f8;
     }
 
-  .navbar {
-  background-color: #000000; /* black */
-  border-bottom: 1px solid #333333; /* dark gray border */
-}
-
+    .navbar {
+      background-color: #000000; /* black */
+      border-bottom: 1px solid #333333; /* dark gray border */
+    }
 
     .navbar .btn-m {
       padding: 5px 10px;
@@ -28,24 +27,22 @@
       margin-left: 5px;
     }
 
-   header {
+    header {
       background-image: url('/Amoy-Ubeiden/img/backgrounds/welcome.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top center;
-      /*background-position: center center; */      /* This line is commented out; if used, it would align background image at the center center */
+      /*background-position: center center; */
       background-attachment: fixed;
       color: white;
-      background-repeat: none;                   /* Prevents the background image from repeating (Note: usually no-repeat is used) */
-      -webkit-background-size: cover;            /* For Safari and older Chrome: scale background image to cover entire header */
-      -moz-background-size: cover;               /* For older Firefox: same as above */
+      background-repeat: none;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
       text-align: center;
       padding: 100px 20px;
       position: relative;
       overflow: hidden;
     }
-
-
 
     .intro-text {
       max-width: 600px;
@@ -82,7 +79,6 @@
 </head>
 <body>
 
-
 <!-- Invitation Overlay -->
 <div id="invitation-overlay" style="
   position: fixed;
@@ -107,7 +103,6 @@
   </button>
 </div>
 
-  
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -146,7 +141,7 @@
 <header>
   <!-- Dark Overlay -->
   <div style="
-    background: rgba(0, 0, 0, 0.5);  /* Increased opacity */
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -159,41 +154,59 @@
   <div class="container" style="position: relative; z-index: 2;">
     <div class="intro-text">
       <div class="intro-heading">Amoy & Ubeiden<br>are getting married</div>
-     <!-- <div class="intro-lead-in">The Big Day!</div> -->
-       <!-- <div class="intro-lead-in">October 24, 2026</div>   -->
+      <!-- <div class="intro-lead-in">The Big Day!</div> -->
+      <!-- <div class="intro-lead-in">October 24, 2026</div> -->
 
       <!-- TickCounter Countdown Embed -->
-<div class="countdown-embed">
-  <script>
-    (function(d, s, id) {
-      var js, pjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "//www.tickcounter.com/static/js/loader.js";
-      pjs.parentNode.insertBefore(js, pjs);
-    }(document, "script", "tickcounter-sdk"));
-  </script>
+      <div class="countdown-embed">
+        <script>
+          (function(d, s, id) {
+            var js, pjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//www.tickcounter.com/static/js/loader.js";
+            pjs.parentNode.insertBefore(js, pjs);
+          }(document, "script", "tickcounter-sdk"));
+        </script>
 
-  <a 
-    data-type="countdown" 
-    data-id="7506491" 
-    class="tickcounter" 
-    style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto; border:none;" 
-    title="Big Day" 
-    href="//www.tickcounter.com/"
-  >
-    Big Day
-  </a>
-</div>
+        <a 
+          data-type="countdown" 
+          data-id="7506491" 
+          class="tickcounter" 
+          style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto; border:none;" 
+          title="Big Day" 
+          href="//www.tickcounter.com/"
+        >
+          Big Day
+        </a>
+      </div>
 
       <a href="#saveDay" class="page-scroll btn btn-xl" style="background-color: #daa520; color: white; font-size: 30px; padding: 25px 50px; border-radius: 50px 50px 50px 50px;">
-  Save the Date!
-</a>
+        Save the Date!
+      </a>
 
     </div>
   </div>
 </header>
+
+<!-- Add this script before closing body -->
+<script>
+  function openMainSite() {
+    const overlay = document.getElementById('invitation-overlay');
+    if (overlay) {
+      overlay.style.display = 'none';
+      sessionStorage.setItem('invitationOpened', 'true');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (sessionStorage.getItem('invitationOpened') === 'true') {
+      const overlay = document.getElementById('invitation-overlay');
+      if (overlay) overlay.style.display = 'none';
+    }
+  });
+</script>
 
 </body>
 </html>
