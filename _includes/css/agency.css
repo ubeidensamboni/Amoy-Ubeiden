@@ -566,9 +566,9 @@ section h3.section-subheading {
     top: 0;
     bottom: 0;
     left: 40px;
-    width: 2px;
+    width: 4px;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: #999999; /* changed from light gray to darker gray #f1f1f1; */ 
 }
 
 .timeline>li {
@@ -670,7 +670,10 @@ section h3.section-subheading {
 @media(min-width:768px) {
     .timeline:before {
         left: 50%;
+        margin-left: -2px; /* Adjusted for new width */
     }
+}
+
 
     .timeline>li {
         margin-bottom: 100px;
