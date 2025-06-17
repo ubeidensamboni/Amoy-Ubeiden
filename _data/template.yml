@@ -1,11 +1,11 @@
 # Color settings (hex-codes without the leading hashtag)
 color:
-  primary: f3b806  ###Color golden background icons, menu-highlight headers, hyperlink
-  secondary: d4af37   ####menu-highlight headers navigator
-  secondary-dark: 333
-  muted: 777
+  primary: f3b806          # Golden yellow — used for icons, buttons, and highlight elements
+  secondary: d4af37        # Slightly darker gold — used in headers or navigation highlights
+  secondary-dark: ffffff   # Strong white — replaces dark gray for light-themed elements
+  muted: f2f2f2            # Medium white — replaces medium gray for soft backgrounds/text
 
-# Fonf families
+# Font families
 font:
-  primary: 'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'
-  secondary: 'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'
+  primary: 'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'   # Clean modern sans-serif
+  secondary: 'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif' # Same as primary for consistency
