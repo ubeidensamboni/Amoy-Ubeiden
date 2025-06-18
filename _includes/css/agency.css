@@ -530,7 +530,8 @@ section h3.section-subheading {
     padding: 25px;
     max-width: 400px;
     text-align: center;
-    background-color: #000;
+    background-color: #fff;
+    color: #000; /* Add this line for black text */
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
