@@ -1,39 +1,70 @@
 <!-- Events Section -->
 <section id="events" style="background-image: url('/Amoy-Ubeiden/img/backgrounds/background.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
   <style>
-    .timeline > li,
+    /* Timeline layout */
+    .timeline {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .timeline > li {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
     .timeline > li.timeline-inverted {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 40px;
+      flex-direction: row-reverse;
     }
 
-    .timeline > li .timeline-image,
-    .timeline > li.timeline-inverted .timeline-image {
-        flex: 0 0 auto;
-        text-align: center;
-        margin: 0 20px;
+    .timeline-image {
+      flex: 0 0 auto;
+      text-align: center;
+      margin: 0 30px;
     }
 
-    .timeline > li .timeline-panel,
-    .timeline > li.timeline-inverted .timeline-panel {
-        flex: 1;
-        text-align: center;
+    .timeline-image img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 50%;
+      border: 5px solid white;
     }
 
+    .timeline-panel {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .timeline-heading h4 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .timeline-heading .subheading {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    /* Responsive */
     @media (max-width: 767px) {
-        .timeline > li,
-        .timeline > li.timeline-inverted {
-            flex-direction: column;
-        }
+      .timeline > li,
+      .timeline > li.timeline-inverted {
+        flex-direction: column;
+      }
 
-        .timeline > li .timeline-panel,
-        .timeline > li.timeline-inverted .timeline-panel {
-            margin-top: 20px;
-            text-align: center;
-        }
+      .timeline-image {
+        margin: 0 auto 20px auto;
+      }
+
+      .timeline-panel {
+        padding: 15px;
+      }
     }
   </style>
 
@@ -43,12 +74,13 @@
         <h2 class="section-heading">Wedding Day</h2>
       </div>
     </div>
+
     <div class="row">
       <div class="col-lg-12">
         <ul class="timeline">
           <li>
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/1.png" alt="">
+              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/1.png" alt="Ceremony">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -60,7 +92,7 @@
 
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/2.png" alt="">
+              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/2.png" alt="Cocktail">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -72,7 +104,7 @@
 
           <li>
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/3.png" alt="">
+              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/3.png" alt="Dinner">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -84,7 +116,7 @@
 
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/4.png" alt="">
+              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/4.png" alt="First Dance">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -96,7 +128,7 @@
 
           <li>
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/5.png" alt="">
+              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/5.png" alt="Special Dance">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -108,7 +140,7 @@
 
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/6.png" alt="">
+              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/6.png" alt="Cake Cutting">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -120,7 +152,7 @@
 
           <li>
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/7.png" alt="">
+              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/7.png" alt="Party Games">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -132,7 +164,7 @@
 
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/8.png" alt="">
+              <img class="img-circle img-responsive" src="/Amoy-Ubeiden/img/events/8.png" alt="Dance">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
