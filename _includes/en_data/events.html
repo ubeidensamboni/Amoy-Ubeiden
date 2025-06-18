@@ -90,16 +90,12 @@
     }
 
     /* 📱 Mobile view */
-   /* Desktop/Laptop only */
-      @media (min-width: 768px) {
-        #events .timeline > li:first-child {
-          margin-top: 80px; /* Adjust for your taste */
-        }
-        #events .section-heading {
-          margin-bottom: 40px;
-        }
+    @media (max-width: 767px) {
+      .timeline > li,
+      .timeline > li.timeline-inverted {
+        display: block; /* Stack children vertically */
+        margin-bottom: 80px;
       }
-
       .timeline-image {
         margin: 0 auto 12px auto; /* Center and space below image */
         display: flex;
