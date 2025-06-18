@@ -44,10 +44,10 @@
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      border: 4px solid white; /* Only one border, not on the image */
-      background: #d4af37;     /* Optional: yellow background for empty space */
+      border: 4px solid white;
+      background: #d4af37;
       margin-bottom: 10px;
-      overflow: hidden;        /* Ensures image stays inside circle */
+      overflow: hidden;
       flex-shrink: 0;
       z-index: 2;
     }
@@ -55,16 +55,18 @@
     .timeline-image img {
       width: 100%;
       height: 100%;
-      object-fit: contain;     /* Show the whole image, no crop */
+      object-fit: contain;
       border-radius: 50%;
       display: block;
-      /* REMOVE border/background here! */
     }
 
     .timeline-panel {
       flex-grow: 1;
       padding: 0 10px;
       color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .timeline-panel .timeline-heading {
@@ -89,37 +91,50 @@
 
     /* 📱 Mobile view */
     @media (max-width: 767px) {
-  .timeline > li,
-  .timeline > li.timeline-inverted {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .timeline-image {
-    margin-bottom: 10px;
-  }
-  .timeline-panel {
-    padding: 0;
-    width: auto; /* let it shrink to content */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: none; /* remove any background */
-    box-shadow: none; /* remove any shadow */
-  }
-  .timeline-panel .timeline-heading {
-    align-items: center;
-    padding: 0;
-  }
-  .timeline-heading h4,
-  .timeline-heading .subheading {
-    text-align: center;
-    width: 100%;
-    margin: 0;
-  }
-}
-
+      .timeline::before {
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+      }
+      .timeline > li,
+      .timeline > li.timeline-inverted {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .timeline-image {
+        margin-bottom: 0;
+      }
+      .timeline-panel {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: none;
+        box-shadow: none;
+        margin-top: 0;
+      }
+      .timeline-panel .timeline-heading {
+        align-items: center;
+        padding: 0;
+      }
+      .timeline-heading h4,
+      .timeline-heading .subheading {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+      }
+      /* Stack the text directly under the image */
+      .timeline > li,
+      .timeline > li.timeline-inverted {
+        gap: 0;
+      }
+      .timeline-image + .timeline-panel {
+        margin-top: 12px;
+      }
+    }
   </style>
 
   <div class="container">
