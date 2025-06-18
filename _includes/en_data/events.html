@@ -1,111 +1,126 @@
 <!-- Events Section -->
 <section id="events" style="background-image: url('/Amoy-Ubeiden/img/backgrounds/background.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
   <style>
-  .timeline {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 1000px;
-    position: relative;
-  }
+    .timeline {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 1000px;
+      position: relative;
+    }
 
-  /* Vertical line */
-  .timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: white;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 0;
-  }
+    /* Vertical line */
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: white;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
 
-  .timeline > li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin-bottom: 40px;
-    gap: 10px;
-    position: relative;
-    z-index: 1;
-  }
+    .timeline > li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      margin-bottom: 40px;
+      gap: 10px;
+      position: relative;
+      z-index: 1;
+    }
 
-  .timeline > li.timeline-inverted {
-    flex-direction: row-reverse;
-  }
+    .timeline > li.timeline-inverted {
+      flex-direction: row-reverse;
+    }
 
-  .timeline-image img {
-  width: 120px;
-  height: 120px;
-  object-fit: contain; /* Ensures the whole image fits inside the circle */
-  border-radius: 50%;
-  border: 4px solid white;
-  background: #f1c40f; /* Optional: matches your circle background */
-}
+    .timeline-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white; /* Only one border, not on the image */
+      background: #f1c40f;     /* Optional: yellow background for empty space */
+      margin-bottom: 10px;
+      overflow: hidden;        /* Ensures image stays inside circle */
+      flex-shrink: 0;
+      z-index: 2;
+    }
 
-  .timeline-panel {
-    flex-grow: 1;
-    padding: 0 10px;
-    color: white;
-  }
+    .timeline-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;     /* Show the whole image, no crop */
+      border-radius: 50%;
+      display: block;
+      /* REMOVE border/background here! */
+    }
 
-  .timeline-panel .timeline-heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4px;
-  }
+    .timeline-panel {
+      flex-grow: 1;
+      padding: 0 10px;
+      color: white;
+    }
 
-  .timeline-heading h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-    color: white;
-  }
+    .timeline-panel .timeline-heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+    }
 
-  .timeline-heading .subheading {
-    font-size: 15px;
-    color: #ccc;
-    margin: 0;
-  }
+    .timeline-heading h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+      color: white;
+    }
 
-  /* 📱 Mobile view */
-  @media (max-width: 767px) {
-  .timeline::before {
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-  }
-  .timeline > li,
-  .timeline > li.timeline-inverted {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .timeline-panel {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .timeline-panel .timeline-heading {
-    align-items: center;
-  }
-  .timeline-heading h4,
-  .timeline-heading .subheading {
-    text-align: center;
-    width: 100%;
-  }
-}
+    .timeline-heading .subheading {
+      font-size: 15px;
+      color: #ccc;
+      margin: 0;
+    }
 
-</style>
-
-
+    /* 📱 Mobile view */
+    @media (max-width: 767px) {
+      .timeline::before {
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+      }
+      .timeline > li,
+      .timeline > li.timeline-inverted {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .timeline-image {
+        margin-bottom: 10px;
+      }
+      .timeline-panel {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .timeline-panel .timeline-heading {
+        align-items: center;
+      }
+      .timeline-heading h4,
+      .timeline-heading .subheading {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  </style>
 
   <div class="container">
     <div class="row">
