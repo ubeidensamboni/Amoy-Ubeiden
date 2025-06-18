@@ -454,7 +454,7 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 40px;
-    color: #d4af37; /* Secondary gold color */
+    color: #d4af37; !important; /* Force override */
 }
 
 section h3.section-subheading {
