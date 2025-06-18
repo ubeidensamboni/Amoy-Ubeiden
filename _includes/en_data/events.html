@@ -14,7 +14,7 @@
       justify-content: center;
       flex-wrap: nowrap;
       margin-bottom: 40px;
-      gap: 10px;
+      gap: 0; /* Reduced space between image and text */
     }
 
     .timeline > li.timeline-inverted {
@@ -36,10 +36,16 @@
 
     .timeline-panel {
       flex-grow: 1;
-      text-align: center;
+      text-align: left;
       color: white;
-      padding: 0;
+      padding-left: 10px; /* brings text closer to image */
       margin: 0;
+    }
+
+    .timeline > li.timeline-inverted .timeline-panel {
+      text-align: right;
+      padding-left: 0;
+      padding-right: 10px;
     }
 
     .timeline-heading h4 {
@@ -66,6 +72,11 @@
         width: 100%;
         padding: 0;
         margin-top: 10px;
+        text-align: center !important;
+      }
+
+      .timeline > li.timeline-inverted .timeline-panel {
+        padding-right: 0;
       }
 
       .timeline-image {
