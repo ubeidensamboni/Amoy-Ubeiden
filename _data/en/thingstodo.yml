@@ -32,10 +32,15 @@
     <a href="https://colombia.travel/en/medellin">Medellín</a><br>
 
 - title: Santa Marta, Cartagena
-  subtitle: Description
+  subtitle: If you love sun, sand and the sea, this is the place for you.
   modal-id: 6
   img: 6.jpg
   thumbnail: 6.jpg
   drive: X minutes
   link: https://colombia.travel/en/santa-marta
-  description: You may need to get there by plane from Alfonso Bonilla Aragón International Airport - Calí (CLO) or El Edén International Airport (AXM).
+  description: |
+    You may need to get there by plane from Alfonso Bonilla Aragón International Airport - Calí (CLO) or El Edén International Airport (AXM).<br>
+    <a href="https://colombia.travel/en/santa-marta">Santa Marta</a><br>
+    <a href="https://colombia.travel/en/santa-marta/visit-tayrona-park">Tayrona Park</a><br>
+    <a href="https://colombia.travel/en/cartagena-de-indias">Cartagena</a><br>
+    <a href="https://colombia.travel/en/cartagena-de-indias/beaches-and-islands-rosario">Beaches and Islands of Rosario</a><br>
