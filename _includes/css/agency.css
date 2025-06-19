@@ -513,7 +513,7 @@ section h3.section-subheading {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #000;
+    color: #000; !important;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
@@ -531,20 +531,20 @@ section h3.section-subheading {
     max-width: 400px;
     text-align: center;
     background-color: #fff;
-    color: #000; /* Add this line for black text */
+    color: #000; !important; /* Add this line for black text */
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
-	color: #000; /* Add this line for black text */
+    color: #000; !important;/* Add this line for black text */
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
-     color: #000; /* Add this line for black text */
+     color: #000; !important;/* Add this line for black text */
 }
 
 #portfolio * {
