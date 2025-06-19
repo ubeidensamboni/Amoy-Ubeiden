@@ -1,80 +1,103 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Include the Imperial Script font -->
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
     <style>
-        .rowstory {
-          display: flex;
-          flex-wrap: wrap;
-          padding: 0 4px;
+      .four-images-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 30px auto;
+        padding: 0 15px;
+        max-width: 400px;
+      }
+
+      .image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-wrapper img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+        max-width: 160px;
+      }
+
+      /* Medium screens (laptop/tablet) */
+      @media screen and (max-width: 1024px) {
+        .four-images-row {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Small screens (mobile) */
+      @media screen and (max-width: 480px) {
+        .four-images-row {
+          max-width: 100%;
+          padding: 0 10px;
         }
 
-        /* Create four equal columns that sits next to each other */
-        .columnstory {
-          flex: 25%;
-          max-width: 25%;
-          padding: 0 4px;
+        .image-wrapper img {
+          max-width: 100%;
         }
-
-        .columnstory img {
-          margin-top: 8px;
-          vertical-align: middle;
-          width: 100%;
-        }
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 800px) {
-          .columnstory {
-            flex: 50%;
-            max-width: 50%;
-          }
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-          .columnstory {
-            flex: 100%;
-            max-width: 100%;
-          }
-        }
+      }
     </style>
+  </head>
 
+  <body>
     <!-- Our Story Section -->
-    <section id="our_story" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Notre Histoire</h2>
-                </div>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="largepad text-muted">Voici l'histoire de notre amour inter-espèces. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac odio diam. Donec efficitur magna non viverra fermentum. Quisque aliquam arcu sit amet dolor euismod tempor. Maecenas vulputate rutrum tellus, a gravida magna condimentum ac. Maecenas euismod ipsum a nibh vehicula, ac euismod purus sagittis. Cras interdum sed est a gravida. Fusce rutrum dui quam. Maecenas finibus erat eget nunc tincidunt porta. Nullam viverra, orci in pulvinar interdum, velit tellus dapibus neque, in porta libero libero eu metus. In efficitur bibendum nulla, nec efficitur metus congue vel. Aliquam maximus vitae tortor at posuere. Vestibulum fringilla ullamcorper cursus. Cras pulvinar sem a dapibus mollis. Aliquam scelerisque nunc finibus sapien varius mollis. In dapibus, massa id iaculis tempus, est nulla condimentum dolor, a consequat lorem dolor ut metus. Sed ipsum diam, varius quis sagittis ut, congue volutpat justo. Pellentesque metus ante, sagittis ac dolor quis, dignissim egestas magna. Nullam et enim quis felis condimentum aliquet. Cras a sodales nibh. Sed euismod augue odio, nec ullamcorper nisl facilisis in. Vivamus id eros augue. Praesent dapibus sem id velit mattis vestibulum. Vestibulum id nulla vitae est rhoncus sollicitudin eget eu sapien. Curabitur sed orci orci. Cras a diam lacus. Praesent dui nulla, pharetra in ullamcorper eu, sagittis id purus. Morbi porta nunc vitae nisi varius fermentum. Nullam non iaculis quam. Cras et pellentesque metus. Aliquam sollicitudin leo eu orci.
-                </p>
-            </div>
+    <section id="our_story" class="bg-light-gray" style="background-image: url('/Amoy-Ubeiden/img/backgrounds/background.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Our Story</h2>
+          </div>
         </div>
-        <div class="rowstory">
-            <div class="columnstory">
-                <img src="../img/story/col1-row1.jpg">
-                <img src="../img/story/col1-row2.jpg">
-                <img src="../img/story/col1-row3.jpg">
-                <img src="../img/story/col1-row4.jpg">
-            </div>
-            <div class="columnstory">
-                <img src="../img/story/col2-row1.jpg">
-                <img src="../img/story/col2-row2.jpg">
-                <img src="../img/story/col2-row3.jpg">
-                <img src="../img/story/col2-row4.jpg">
-            </div>
-            <div class="columnstory">
-                <img src="../img/story/col3-row1.jpg">
-                <img src="../img/story/col3-row2.jpg">
-                <img src="../img/story/col3-row3.jpg">
-                <img src="../img/story/col3-row4.jpg">
-            </div>
-            <div class="columnstory">
-                <img src="../img/story/col4-row1.jpg">
-                <img src="../img/story/col4-row2.jpg">
-                <img src="../img/story/col4-row3.jpg">
-                <img src="../img/story/col4-row4.jpg">
-            </div>
+
+        <!-- 🖋️ Imperial Script Phrase -->
+        <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top: 10px;">
+          <p style="
+            font-family: 'Imperial Script', cursive;
+            font-size: 36px;
+            margin-bottom: 10px;
+          ">
+            When the whole world fell apart, our hearts found each other forever.
+          </p>
+
+          <p style="font-size: 16px; margin-bottom: 10px;">
+            –March 24, 2020–
+          </p>
         </div>
+
+        <!-- Regular Paragraph -->
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <p class="largepad text-muted">
+            This phrase and this date mark the beginning of our lives together. The thousands of kilometers were never an obstacle. In the first few months, like new lovebirds, we explored each other's likes, disagreements, and peculiarities. After some time, we decided to date virtually. After almost two years, we saw each other physically for the first time, and the chemistry went to another level. We were legally married on December 14, 2024, in London, UK, and we can't wait to do it again with a traditional ceremony with our families and friends.
+            <br><br> We hope to see you soon!
+          </p>
+        </div>
+      </div>
+
+      <!-- 4 Images Row -->
+      <div class="four-images-row">
+        <div class="image-wrapper">
+          <img src="/Amoy-Ubeiden/img/story/1.jpg" alt="Image 1">
+        </div>
+        <div class="image-wrapper">
+          <img src="/Amoy-Ubeiden/img/story/2.jpg" alt="Image 2">
+        </div>
+        <div class="image-wrapper">
+          <img src="/Amoy-Ubeiden/img/story/3.jpg" alt="Image 3">
+        </div>
+        <div class="image-wrapper">
+          <img src="/Amoy-Ubeiden/img/story/4.jpg" alt="Image 4">
+        </div>
+      </div>
     </section>
+  </body>
 </html>
