@@ -1,5 +1,5 @@
- <!-- Portfolio Modals -->
- {% for post in site.data.en.thingstodo %}
+<!-- Portfolio Modals -->
+{% for post in site.data.en.thingstodo %}
     <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -21,7 +21,6 @@
                                     <strong><a href="{{ post.link }}">{{ post.drive }}</a></strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
