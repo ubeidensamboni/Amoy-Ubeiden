@@ -12,27 +12,37 @@
 
     <style>
       #portfolio .portfolio-card {
-          background-color: #fff;
-          padding: 25px;
-          max-width: 400px;
-          margin: 0 auto 15px;
-          text-align: center;
-          color: #000; /* ensures default text color black */
-      }
-      
-      #portfolio .portfolio-card h4 {
-          margin-bottom: 15px;
-          color: #000 !important; /* force black title */
-          text-transform: none;
-      }
-      
-      #portfolio .portfolio-card p {
-          font-family: {{ site.data.template.font.secondary }};
-          font-size: 16px;
-          color: #000 !important; /* force black caption */
-          margin-top: 15px;
-      }
-
+    background-color: #fff;
+    padding: 25px;
+    max-width: 400px;
+    margin: 0 auto 30px;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+    #portfolio .portfolio-card h4 {
+            margin-bottom: 15px;
+            color: #000;
+            text-transform: none;
+        }
+        
+        #portfolio .portfolio-card p {
+            font-family: {{ site.data.template.font.secondary }};
+            font-size: 16px;
+            color: #000;
+            margin-top: 15px;
+        }
+        
+        /* Make images fit nicely inside the card */
+        #portfolio .portfolio-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 3px;
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 
     {% assign counter = 0 %}
