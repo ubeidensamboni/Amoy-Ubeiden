@@ -22,9 +22,9 @@
 
 - title: Quindío
   subtitle: Loved the Encanto movie? Do you love coffee? Colorful towns, tall wax palms, magical landscapes await!
-  modal-id: 4
-  img: 4.jpg
-  thumbnail: 4.jpg
+  modal-id: 3
+  img: 3.jpg
+  thumbnail: 3.jpg
   description: |
     Take a bus from Roldanillo to Armenia, then Armenia to your final destination.<br>
     <a href="https://colombia.travel/en/salento">Salento</a><br>
@@ -34,9 +34,9 @@
 
 - title: Medellín
   subtitle: The City of Eternal Spring invites you to enjoy its perfect climate, vibrant culture, and stunning mountain views.
-  modal-id: 5
-  img: 5.jpg
-  thumbnail: 5.jpg
+  modal-id: 4
+  img: 4.jpg
+  thumbnail: 4.jpg
   description: | 
     You may need to fly in via Alfonso Bonilla Aragón International Airport - Cali (CLO) or El Edén International Airport (AXM).<br>
     <a href="https://colombia.travel/en/medellin/rock-guatape">Rock of Guatapé</a><br>
@@ -44,9 +44,9 @@
 
 - title: Santa Marta, Cartagena
   subtitle: If you love sun, sand, and sea, this is the place for you.
-  modal-id: 6
-  img: 6.jpg
-  thumbnail: 6.jpg
+  modal-id: 5
+  img: 5.jpg
+  thumbnail: 5.jpg
   description: |
     You may need to fly in via Alfonso Bonilla Aragón International Airport - Cali (CLO) or El Edén International Airport (AXM).<br>
     <a href="https://colombia.travel/en/santa-marta">Santa Marta</a><br>
@@ -56,9 +56,9 @@
 
 - title: Bogotá
   subtitle: Colombia’s capital and largest city is a vibrant, multicultural hub where history and modern life blend seamlessly.
-  modal-id: 3
-  img: 3.jpg
-  thumbnail: 3.jpg
+  modal-id: 6
+  img: 6.jpg
+  thumbnail: 6.jpg
   description: | 
     You may need to fly in via Alfonso Bonilla Aragón International Airport - Cali (CLO) or El Edén International Airport (AXM).<br>
     <a href="https://colombia.travel/en/bogota/sanctuary-monserrate">Sanctuary of Monserrate</a><br>
