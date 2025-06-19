@@ -187,7 +187,7 @@ fieldset[disabled] .btn-xl.active {
 
 .btn-m {
     padding: 3px 3px;
-    border-color: #{{ site.data.template.color.primary }};
+    border-color: #{{ site.data.template.color.secondary }};
     border-radius: 3px;
     /* text-transform: uppercase; */ /* ← removed */
     font-family: {{ site.data.template.font.primary }};
@@ -202,7 +202,7 @@ fieldset[disabled] .btn-xl.active {
 .btn-m:active,
 .btn-m.active,
 .open .dropdown-toggle.btn-m {
-    border-color: #{{ site.data.template.color.primary }};
+    border-color: #{{ site.data.template.color.secondary }};
     color: #fff;
     background-color: #{{ site.data.template.color.secondary }};
 }
