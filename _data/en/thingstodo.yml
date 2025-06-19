@@ -14,21 +14,22 @@
   modal-id: 4
   img: 4.jpg
   thumbnail: 4.jpg
-  drive: 3 hours
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
   description: |
+    You may take a Bus from Roldanillo to Armenia, then Armenia to the final destination<br>
     <a href="https://colombia.travel/en/salento">Salento</a><br>
     <a href="https://colombia.travel/en/filandia">Finlandia</a><br>
     <a href="https://colombia.travel/en/blog/unforgettable-journey-through-colombian-coffee-route">Colombian coffee route</a><br>
+    <a href="https://colombia.travel/en/armenia/bird-watching-in-coffee-cultural-landscape">Bird Watching in the Coffee Cultural Landscape</a>
 
 - title: Medellín
   subtitle: Description
   modal-id: 5
   img: 5.jpg
   thumbnail: 5.jpg
-  drive: X minutes
-  link: https://colombia.travel/en/medellin
-  description: You may need to get there by plane from Alfonso Bonilla Aragón International Airport - Calí (CLO) or El Edén International Airport (AXM).
+  description: | 
+    You may need to get there by plane from Alfonso Bonilla Aragón International Airport - Calí (CLO) or El Edén International Airport (AXM).<br>
+    <a href="https://colombia.travel/en/medellin/rock-guatape">Rock of Guatapé</a><br>
+    <a href="https://colombia.travel/en/medellin">Medellín</a><br>
 
 - title: Santa Marta, Cartagena
   subtitle: Description
