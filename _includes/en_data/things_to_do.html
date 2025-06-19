@@ -1,40 +1,39 @@
 <!-- Things To Do Section -->
 <section id="portfolio" style="background-image: url('/Amoy-Ubeiden/img/backgrounds/background.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Things To Do</h2>
-                <p class="text-muted">There are many activities you might enjoy during your stay. Some are located close to Roldanillo and can be reached easily using local transportation. Others may require a longer trip by bus, usually around two to three hours. And if you're looking for sunshine, the beach, and the sea, places like Cartagena or Santa Marta could be a great choice. Feel free to ask us anytime if you’d like more information!</p>
-            </div>
-        </div>
-
-        {% assign counter = 0 %}
-        {% for post in site.data.en.thingstodo %}
-            {% if forloop.first or counter == 0 %}
-                <div class="row justify-content-center">
-            {% endif %}
-
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="/Amoy-Ubeiden/img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>{{ post.title }}</h4>
-                    <p class="text-muted">{{ post.subtitle }}</p>
-                </div>
-            </div>
-
-            {% assign counter = counter | plus: 1 %}
-            {% if counter == 3 or forloop.last %}
-                </div>
-                {% assign counter = 0 %}
-            {% endif %}
-        {% endfor %}
-
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Things To Do</h2>
+        <p class="text-muted">
+          There are many activities you might enjoy during your stay. Some are located close to Roldanillo and can be reached easily using local transportation. Others may require a longer trip by bus, usually around two to three hours. And if you're looking for sunshine, the beach, and the sea, places like Cartagena or Santa Marta could be a great choice. Feel free to ask us anytime if you’d like more information!
+        </p>
+      </div>
     </div>
+
+    {% assign counter = 0 %}
+    {% for post in site.data.en.thingstodo %}
+      {% if forloop.first or counter == 0 %}
+        <div class="row justify-content-center">
+      {% endif %}
+
+      <div class="col-md-4 col-sm-6 portfolio-item text-center">
+        <h4>{{ post.title }}</h4>
+        <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link d-block" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="/Amoy-Ubeiden/img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered mb-2" alt="{{ post.title }}">
+        </a>
+        <p class="text-muted">{{ post.subtitle }}</p>
+      </div>
+
+      {% assign counter = counter | plus: 1 %}
+      {% if counter == 3 or forloop.last %}
+        </div>
+        {% assign counter = 0 %}
+      {% endif %}
+    {% endfor %}
+  </div>
 </section>
