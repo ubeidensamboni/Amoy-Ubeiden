@@ -8,38 +8,42 @@
       .four-images-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-        margin: 30px 0;
+        gap: 10px;
+        margin: 30px auto;
         padding: 0 15px;
-        max-width: 400px; /* limit max width so images aren’t too wide on large screens */
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 400px;
       }
 
       .image-wrapper {
-        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .image-wrapper img {
-        width: 80%;
+        width: 100%;
         height: auto;
         border-radius: 8px;
         display: block;
+        max-width: 160px;
       }
 
       /* Medium screens (laptop/tablet) */
       @media screen and (max-width: 1024px) {
         .four-images-row {
-          grid-template-columns: 1fr; /* stack in single column */
-          max-width: 400px; /* smaller max width */
+          grid-template-columns: 1fr;
         }
       }
 
       /* Small screens (mobile) */
       @media screen and (max-width: 480px) {
         .four-images-row {
-          max-width: 100%; /* full width on mobile */
+          max-width: 100%;
           padding: 0 10px;
+        }
+
+        .image-wrapper img {
+          max-width: 100%;
         }
       }
     </style>
