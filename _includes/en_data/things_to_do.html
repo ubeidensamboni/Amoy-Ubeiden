@@ -10,23 +10,50 @@
       </div>
     </div>
 
+    <style>
+      .portfolio-item .card-frame {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .portfolio-item .card-frame h4 {
+        margin-bottom: 15px;
+      }
+      .portfolio-item .card-frame img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 4px;
+      }
+      .portfolio-item .card-frame p {
+        margin-bottom: 0;
+      }
+    </style>
+
     {% assign counter = 0 %}
     {% for post in site.data.en.thingstodo %}
       {% if forloop.first or counter == 0 %}
         <div class="row justify-content-center">
       {% endif %}
 
-      <div class="col-md-4 col-sm-6 portfolio-item text-center">
-        <h4>{{ post.title }}</h4>
-        <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link d-block" data-toggle="modal">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="card-frame">
+          <h4>{{ post.title }}</h4>
+          <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link d-block" data-toggle="modal" aria-label="Open details for {{ post.title }}">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
             </div>
-          </div>
-          <img src="/Amoy-Ubeiden/img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered mb-2" alt="{{ post.title }}">
-        </a>
-        <p class="text-muted">{{ post.subtitle }}</p>
+            <img src="/Amoy-Ubeiden/img/portfolio/{{ post.thumbnail }}" alt="{{ post.title }}">
+          </a>
+          <p class="text-muted">{{ post.subtitle }}</p>
+        </div>
       </div>
 
       {% assign counter = counter | plus: 1 %}
