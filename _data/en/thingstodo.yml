@@ -1,4 +1,4 @@
-- title: Mirador Piedra Grande
+- title: Roldanillo and Surrounding
   subtitle: Enjoy the beautiful view. Try typical drinks and local food.
   modal-id: 1
   img: 1.jpg
@@ -6,35 +6,20 @@
   description: |
     <a href="https://www.google.com/maps/place/Mirador+Piedra+Grande/@4.4489488,-76.191758,17z/data=!4m10!1m2!2m1!1smirador+piedra+grande+roldanillo!3m6!1s0x8e383a19d432d3ff:0x43d4d03a0c48558b!8m2!3d4.4492993!4d-76.1885757!15sCiBtaXJhZG9yIHBpZWRyYSBncmFuZGUgcm9sZGFuaWxsb5IBDHZpbGxhZ2VfaGFsbKoBSRABMh8QASIbc-POoA5VZNqrkYXNwVZ-Rr-fTQPc6CtUUx4VMiQQAiIgbWlyYWRvciBwaWVkcmEgZ3JhbmRlIHJvbGRhbmlsbG_gAQA!16s%2Fg%2F11c0vn5rgc?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D">Visit Mirador Piedra Grande</a><br>
     <a href="https://www.instagram.com/pescalaabuelita/?hl=es">Restaurant & Sport Fishing: La Abuelita</a><br>
-    <a href="https://web.maclic.co/en/place/calle-ocho/">Tastes, rhythms, and fun in the heart of Roldanillo</a><br>
+    <a href="https://web.maclic.co/en/place/calle-ocho/">Tastes, Rhythms, and Fun in the Heart of Roldanillo</a><br>
     <a href="https://www.parapenteroldanillo.co/en">Paragliding Flight in Roldanillo</a><br>
 
-- title: Restaurante y pesca deportiva La Abuelita
-  subtitle: Fresh catch, great flavors, relaxing outdoor space
-  modal-id: 2
-  img: 2.jpg
-  thumbnail: 2.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Fresh catch, great flavors, relaxing outdoor space.
-
-- title: Food, Music & Night Clubs
-  subtitle: Tastes, rhythms, and fun in the heart of Roldanillo
-  modal-id: 3
-  img: 3.jpg
-  thumbnail: 3.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
-
-- title: Cocora Valley, Salento
-  subtitle: Loved Encanto movie? Visit Salento and Filandia. Colorful towns, tall wax palms, magical landscapes that inspired the film.
+- title: Quindío
+  subtitle: Loved Encanto movie? Do you love coffee? Colorful towns, tall wax palms, magical landscapes?
   modal-id: 4
   img: 4.jpg
   thumbnail: 4.jpg
   drive: 3 hours
   link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Loved Encanto movie? Visit Salento and Filandia. Colorful towns, tall wax palms, magical landscapes that inspired the film.
+  description: |
+    <a href="https://colombia.travel/en/salento">Salento</a><br>
+    <a href="https://colombia.travel/en/filandia">Finlandia</a><br>
+    <a href="https://colombia.travel/en/blog/unforgettable-journey-through-colombian-coffee-route">Colombian coffee route</a><br>
 
 - title: Medellín
   subtitle: Description
