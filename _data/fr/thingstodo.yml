@@ -1,53 +1,66 @@
-- title: Activité
-  subtitle: Description
+- title: Roldanillo and Surroundings
+  subtitle: Enjoy beautiful views. Try typical drinks and local food.
   modal-id: 1
   img: 1.jpg
   thumbnail: 1.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: |
+    <a href="https://www.google.com/maps/place/Mirador+Piedra+Grande/@4.4489488,-76.191758,17z/data=!4m10!1m2!2m1!1smirador+piedra+grande+roldanillo!3m6!1s0x8e383a19d432d3ff:0x43d4d03a0c48558b!8m2!3d4.4492993!4d-76.1885757!15sCiBtaXJhZG9yIHBpZWRyYSBncmFuZGUgcm9sZGFuaWxsb5IBDHZpbGxhZ2VfaGFsbKoBSRABMh8QASIbc-POoA5VZNqrkYXNwVZ-Rr-fTQPc6CtUUx4VMiQQAiIgbWlyYWRvciBwaWVkcmEgZ3JhbmRlIHJvbGRhbmlsbG_gAQA!16s%2Fg%2F11c0vn5rgc?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D">Visit Mirador Piedra Grande</a><br>
+    <a href="https://www.instagram.com/pescalaabuelita/?hl=es">Restaurant & Sport Fishing: La Abuelita</a><br>
+    <a href="https://web.maclic.co/en/place/calle-ocho/">Tastes, Rhythms, and Fun in the Heart of Roldanillo</a><br>
+    <a href="https://www.parapenteroldanillo.co/en">Paragliding Flights in Roldanillo</a><br>
 
-- title: Activité
-  subtitle: Description
+- title: Valle del Cauca
+  subtitle: Where vibrant culture meets lush landscapes. Experience the energy and warmth of this unforgettable region!
   modal-id: 2
   img: 2.jpg
   thumbnail: 2.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: | 
+    You may take a bus from Roldanillo to the Calí or final destination.<br>
+    <a href="https://visitvalle.travel/en/experiencia/panoramic-city-tour-cali-cristo-rey-and-historic-center/">Calí</a><br>
+    <a href="https://visitvalle.travel/en/experiencia/adventure-in-darien-water-sports-in-calima-valle-del-cauca-colombia/">Adventure in Darien</a><br>
+    <a href="https://visitvalle.travel/en/humpback-whales-in-colombia/">Humpback whale watching</a><br>
 
-- title: Activité
-  subtitle: Description
+- title: Quindío
+  subtitle: Loved the Encanto movie? Do you love coffee? Colorful towns, tall wax palms, magical landscapes await!
   modal-id: 3
   img: 3.jpg
   thumbnail: 3.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: |
+    Take a bus from Roldanillo to Armenia, then Armenia to your final destination.<br>
+    <a href="https://colombia.travel/en/salento">Salento</a><br>
+    <a href="https://colombia.travel/en/filandia">Filandia</a><br>
+    <a href="https://colombia.travel/en/blog/unforgettable-journey-through-colombian-coffee-route">Colombian Coffee Route</a><br>
+    <a href="https://colombia.travel/en/armenia/bird-watching-in-coffee-cultural-landscape">Bird Watching in the Coffee Cultural Landscape</a><br>
+    <a href="https://parquedelcafe.co/en/parque-del-cafe/">Parque del Café</a><br>
+    <a href="https://panaca.co/">Panaca</a><br>
 
-- title: Activité
-  subtitle: Description
+- title: Medellín
+  subtitle: The City of Eternal Spring invites you to enjoy its perfect climate, vibrant culture, and stunning mountain views.
   modal-id: 4
   img: 4.jpg
   thumbnail: 4.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: | 
+    You may need to fly in via Alfonso Bonilla Aragón International Airport - Cali (CLO) or El Edén International Airport (AXM).<br>
+    <a href="https://colombia.travel/en/medellin/rock-guatape">Rock of Guatapé</a><br>
+    <a href="https://colombia.travel/en/medellin">Medellín</a><br>
 
-- title: Activité
-  subtitle: Description
+- title: Santa Marta, Cartagena
+  subtitle: If you love sun, sand, and sea, this is the place for you.
   modal-id: 5
   img: 5.jpg
   thumbnail: 5.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: |
+    You may need to fly in via Alfonso Bonilla Aragón International Airport - Cali (CLO) or El Edén International Airport (AXM).<br>
+    <a href="https://colombia.travel/en/santa-marta">Santa Marta</a><br>
+    <a href="https://colombia.travel/en/santa-marta/visit-tayrona-park">Tayrona Park</a><br>
+    <a href="https://colombia.travel/en/cartagena-de-indias">Cartagena</a><br>
+    <a href="https://colombia.travel/en/cartagena-de-indias/beaches-and-islands-rosario">Beaches and Islands of Rosario</a><br>
 
-- title: Activité
-  subtitle: Description
+- title: Bogotá
+  subtitle: Colombia’s capital and largest city is a vibrant, multicultural hub where history and modern life blend seamlessly.
   modal-id: 6
   img: 6.jpg
   thumbnail: 6.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: | 
+    You may need to fly in via Alfonso Bonilla Aragón International Airport - Cali (CLO) or El Edén International Airport (AXM).<br>
+    <a href="https://colombia.travel/en/bogota/sanctuary-monserrate">Sanctuary of Monserrate</a><br>
