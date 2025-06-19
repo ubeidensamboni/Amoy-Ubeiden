@@ -233,7 +233,7 @@ fieldset[disabled] .btn-m.active {
 }
 
 .btn-m .badge {
-    color: #{{ site.data.template.color.primary }};
+    color: #{{ site.data.template.color.secondary }};
     background-color: #fff;
 }
 .navbar-default {
