@@ -1,65 +1,79 @@
+
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <span>
-                <a class="brand page-scroll" href="#page-top" style="text-decoration:none">{{site.title}}</a>&nbsp;&nbsp;&nbsp;
-                <a href="/wedding-template/en" class="btn-m">EN</a>
-                <a href="/wedding-template/fr" class="btn-m">FR</a> 
-            </span>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#events">Déroulé</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#venue">Lieu</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#travel">Arrivée</a>
-                <li>
-                    <a class="page-scroll" href="#stay">Logements</a>
-                </li>
-                </li>
-                <li>
-                    <a class="page-scroll hidden-xs hidden-sm" href="#portfolio">Environs</a>
-                </li>
-                <li>
-                    <a class="page-scroll hidden-xs hidden-sm" href="#our_story">Notre Histoire</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#FAQ">FAQ</a>
-                </li>
-                <li>
-                    <a class="page-scroll hidden-xs hidden-sm hidden-md" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span>
+        <a class="brand page-scroll" href="#page-top" style="text-decoration:none">
+          <img src="/Amoy-Ubeiden/img/backgrounds/logo.png" alt="Amoy & Ubeiden Logo" style="height: 50px;">
+        </a>
+        <a href="{{ site.baseurl }}/en" class="btn-m">EN</a>
+        <a href="{{ site.baseurl }}/fr" class="btn-m">ES</a>
+      </span>
     </div>
-    <!-- /.container-fluid -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"><a href="#page-top"></a></li>
+        <li><a class="page-scroll" href="#saveDay">Reserva la Fecha</a></li>
+        <li><a class="page-scroll" href="#our_story">Nuestra Historia</a></li>
+        <li><a class="page-scroll" href="#events">Día de la Boda</a></li>
+        <li><a class="page-scroll" href="#travel">Viaje & Hotel</a></li>
+        <li><a class="page-scroll hidden-xs hidden-sm" href="#portfolio">Cosas que Hacer</a></li>
+        <li><a class="page-scroll" href="#FAQ">Preguntas Frecuentes</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <!-- Header -->
 <header>
-    <div class="container">
-        <div class="intro-text">
-            <div class="intro-heading">Le Chat et le Chien<br>se marient</div>
-            <div class="intro-lead-in">DATE</div>
-            <div class="intro-lead-in">Quelque part de sympa</div>
-            <a href="#events" class="page-scroll btn btn-xl">Plus d'Informations</a>
-        </div>
+  <div style="
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;">
+  </div>
+
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="intro-text">
+      <div class="intro-heading">Amoy & Ubeiden<br>se casan</div>
+
+      <div class="countdown-embed">
+        <script>
+          (function(d, s, id) {
+            var js, pjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//www.tickcounter.com/static/js/loader.js";
+            pjs.parentNode.insertBefore(js, pjs);
+          }(document, "script", "tickcounter-sdk"));
+        </script>
+
+        <a 
+          data-type="countdown" 
+          data-id="7506491" 
+          class="tickcounter" 
+          style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:12%; margin:0 auto; border:none;" 
+          title="Big Day" 
+          href="//www.tickcounter.com/"
+        >
+          Big Day
+        </a>
+      </div>
+
+      <a href="#saveDay" class="page-scroll btn btn-xl" style="background-color: #daa520; color: white; font-size: 30px; padding: 10px 20px; border-radius: 50px;">
+        Guarda la Fecha!
+      </a>
     </div>
+  </div>
 </header>
