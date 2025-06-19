@@ -1,4 +1,4 @@
-# Wedding Website – Status: Hitched! 📨
+# Wedding Website 📨
 
 If you're reading this—hello! We didn’t want to spend money on Squarespace, Wix, or similar platforms to make a wedding website for our guests, so here it is, deployed on GitHub Pages.
 
