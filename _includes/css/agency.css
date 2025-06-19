@@ -918,15 +918,25 @@ ul.social-buttons li a:active {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+
+    /* Added */
+    background-color: #fff !important;
+    color: #000 !important;
 }
 
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
+
+    /* Added */
+    color: #000 !important;
 }
 
 .portfolio-modal .modal-content p {
     margin-bottom: 30px;
+
+    /* Added */
+    color: #000 !important;
 }
 
 .portfolio-modal .modal-content p.item-intro {
@@ -934,11 +944,17 @@ ul.social-buttons li a:active {
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     font-style: italic;
+
+    /* Added */
+    color: #000 !important;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
     margin-top: 0;
     margin-bottom: 30px;
+
+    /* Added */
+    color: #000 !important;
 }
 
 .portfolio-modal .modal-content img {
@@ -979,6 +995,20 @@ ul.social-buttons li a:active {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+/* Added styles for buttons and links */
+
+.portfolio-modal .btn-default {
+    color: #000;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+.portfolio-modal .modal-content a {
+    color: #000 !important;
+    text-decoration: underline;
+}
+
 
 ::-moz-selection {
     text-shadow: none;
