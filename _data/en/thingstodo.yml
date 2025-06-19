@@ -20,9 +20,6 @@
     <a href="https://visitvalle.travel/en/experiencia/adventure-in-darien-water-sports-in-calima-valle-del-cauca-colombia/">Adventure in Darien</a><br>
     <a href="https://visitvalle.travel/en/humpback-whales-in-colombia/">Humpback whale watching</a><br>
 
-
-
-
 - title: Quindío
   subtitle: Loved the Encanto movie? Do you love coffee? Colorful towns, tall wax palms, magical landscapes await!
   modal-id: 4
@@ -56,3 +53,12 @@
     <a href="https://colombia.travel/en/santa-marta/visit-tayrona-park">Tayrona Park</a><br>
     <a href="https://colombia.travel/en/cartagena-de-indias">Cartagena</a><br>
     <a href="https://colombia.travel/en/cartagena-de-indias/beaches-and-islands-rosario">Beaches and Islands of Rosario</a><br>
+
+- title: Bogotá
+  subtitle: Colombia’s capital and largest city is a vibrant, multicultural hub where history and modern life blend seamlessly.
+  modal-id: 3
+  img: 3.jpg
+  thumbnail: 3.jpg
+  description: | 
+    You may need to fly in via Alfonso Bonilla Aragón International Airport - Cali (CLO) or El Edén International Airport (AXM).<br>
+    <a href="https://colombia.travel/en/bogota/sanctuary-monserrate">Sanctuary of Monserrate</a><br>
