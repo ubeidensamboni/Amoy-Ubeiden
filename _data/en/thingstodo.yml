@@ -1,5 +1,5 @@
-- title: Roldanillo and Surrounding
-  subtitle: Enjoy the beautiful view. Try typical drinks and local food.
+- title: Roldanillo and Surroundings
+  subtitle: Enjoy beautiful views. Try typical drinks and local food.
   modal-id: 1
   img: 1.jpg
   thumbnail: 1.jpg
@@ -7,39 +7,39 @@
     <a href="https://www.google.com/maps/place/Mirador+Piedra+Grande/@4.4489488,-76.191758,17z/data=!4m10!1m2!2m1!1smirador+piedra+grande+roldanillo!3m6!1s0x8e383a19d432d3ff:0x43d4d03a0c48558b!8m2!3d4.4492993!4d-76.1885757!15sCiBtaXJhZG9yIHBpZWRyYSBncmFuZGUgcm9sZGFuaWxsb5IBDHZpbGxhZ2VfaGFsbKoBSRABMh8QASIbc-POoA5VZNqrkYXNwVZ-Rr-fTQPc6CtUUx4VMiQQAiIgbWlyYWRvciBwaWVkcmEgZ3JhbmRlIHJvbGRhbmlsbG_gAQA!16s%2Fg%2F11c0vn5rgc?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D">Visit Mirador Piedra Grande</a><br>
     <a href="https://www.instagram.com/pescalaabuelita/?hl=es">Restaurant & Sport Fishing: La Abuelita</a><br>
     <a href="https://web.maclic.co/en/place/calle-ocho/">Tastes, Rhythms, and Fun in the Heart of Roldanillo</a><br>
-    <a href="https://www.parapenteroldanillo.co/en">Paragliding Flight in Roldanillo</a><br>
+    <a href="https://www.parapenteroldanillo.co/en">Paragliding Flights in Roldanillo</a><br>
 
 - title: Quindío
-  subtitle: Loved Encanto movie? Do you love coffee? Colorful towns, tall wax palms, magical landscapes?
+  subtitle: Loved the Encanto movie? Do you love coffee? Colorful towns, tall wax palms, magical landscapes await!
   modal-id: 4
   img: 4.jpg
   thumbnail: 4.jpg
   description: |
-    You may take a Bus from Roldanillo to Armenia, then Armenia to the final destination<br>
+    Take a bus from Roldanillo to Armenia, then Armenia to your final destination.<br>
     <a href="https://colombia.travel/en/salento">Salento</a><br>
-    <a href="https://colombia.travel/en/filandia">Finlandia</a><br>
-    <a href="https://colombia.travel/en/blog/unforgettable-journey-through-colombian-coffee-route">Colombian coffee route</a><br>
+    <a href="https://colombia.travel/en/filandia">Filandia</a><br>
+    <a href="https://colombia.travel/en/blog/unforgettable-journey-through-colombian-coffee-route">Colombian Coffee Route</a><br>
     <a href="https://colombia.travel/en/armenia/bird-watching-in-coffee-cultural-landscape">Bird Watching in the Coffee Cultural Landscape</a>
 
 - title: Medellín
-  subtitle: The City of Eternal Spring, invites you to enjoy its perfect climate, vibrant culture, and stunning mountain views.
+  subtitle: The City of Eternal Spring invites you to enjoy its perfect climate, vibrant culture, and stunning mountain views.
   modal-id: 5
   img: 5.jpg
   thumbnail: 5.jpg
   description: | 
-    You may need to get there by plane from Alfonso Bonilla Aragón International Airport - Calí (CLO) or El Edén International Airport (AXM).<br>
+    You may need to fly in via Alfonso Bonilla Aragón International Airport - Cali (CLO) or El Edén International Airport (AXM).<br>
     <a href="https://colombia.travel/en/medellin/rock-guatape">Rock of Guatapé</a><br>
     <a href="https://colombia.travel/en/medellin">Medellín</a><br>
 
 - title: Santa Marta, Cartagena
-  subtitle: If you love sun, sand and the sea, this is the place for you.
+  subtitle: If you love sun, sand, and sea, this is the place for you.
   modal-id: 6
   img: 6.jpg
   thumbnail: 6.jpg
   drive: X minutes
   link: https://colombia.travel/en/santa-marta
   description: |
-    You may need to get there by plane from Alfonso Bonilla Aragón International Airport - Calí (CLO) or El Edén International Airport (AXM).<br>
+    You may need to fly in via Alfonso Bonilla Aragón International Airport - Cali (CLO) or El Edén International Airport (AXM).<br>
     <a href="https://colombia.travel/en/santa-marta">Santa Marta</a><br>
     <a href="https://colombia.travel/en/santa-marta/visit-tayrona-park">Tayrona Park</a><br>
     <a href="https://colombia.travel/en/cartagena-de-indias">Cartagena</a><br>
