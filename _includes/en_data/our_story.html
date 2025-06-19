@@ -6,18 +6,15 @@
 
     <style>
       .four-images-row {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
         margin: 30px 0;
         padding: 0 15px;
       }
 
       .image-wrapper {
-        flex: 1;
-        max-width: 25%;
-        padding: 0 5px;
+        width: 100%;
       }
 
       .image-wrapper img {
@@ -27,17 +24,10 @@
         display: block;
       }
 
-      @media screen and (max-width: 768px) {
-        .image-wrapper {
-          flex: 0 0 50%;
-          max-width: 50%;
-        }
-      }
-
+      /* Responsive adjustments */
       @media screen and (max-width: 480px) {
-        .image-wrapper {
-          flex: 0 0 100%;
-          max-width: 100%;
+        .four-images-row {
+          grid-template-columns: 1fr; /* single column on small screens */
         }
       }
     </style>
@@ -72,12 +62,12 @@
         <div class="col-lg-8 col-lg-offset-2 text-center">
           <p class="largepad text-muted">
             This phrase and this date mark the beginning of our lives together. The thousands of kilometers were never an obstacle. In the first few months, like new lovebirds, we explored each other's likes, disagreements, and peculiarities. After some time, we decided to date virtually. After almost two years, we saw each other physically for the first time, and the chemistry went to another level. We were legally married on December 14, 2024, in London, UK, and we can't wait to do it again with a traditional ceremony with our families and friends.
-           <br><br> We hope to see you soon!
+            <br><br> We hope to see you soon!
           </p>
         </div>
       </div>
 
-      <!-- 4 Images Row (Horizontal) -->
+      <!-- 4 Images Row (2 Columns x 2 Rows) -->
       <div class="four-images-row">
         <div class="image-wrapper">
           <img src="/Amoy-Ubeiden/img/story/1.jpg" alt="Image 1">
