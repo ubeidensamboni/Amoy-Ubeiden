@@ -11,6 +11,9 @@
         grid-gap: 10px;
         margin: 30px 0;
         padding: 0 15px;
+        max-width: 600px; /* limit max width so images aren’t too wide on large screens */
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .image-wrapper {
@@ -24,10 +27,19 @@
         display: block;
       }
 
-      /* Responsive adjustments */
+      /* Medium screens (laptop/tablet) */
+      @media screen and (max-width: 1024px) {
+        .four-images-row {
+          grid-template-columns: 1fr; /* stack in single column */
+          max-width: 400px; /* smaller max width */
+        }
+      }
+
+      /* Small screens (mobile) */
       @media screen and (max-width: 480px) {
         .four-images-row {
-          grid-template-columns: 1fr; /* single column on small screens */
+          max-width: 100%; /* full width on mobile */
+          padding: 0 10px;
         }
       }
     </style>
@@ -67,7 +79,7 @@
         </div>
       </div>
 
-      <!-- 4 Images Row (2 Columns x 2 Rows) -->
+      <!-- 4 Images Row -->
       <div class="four-images-row">
         <div class="image-wrapper">
           <img src="/Amoy-Ubeiden/img/story/1.jpg" alt="Image 1">
