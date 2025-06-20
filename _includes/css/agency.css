@@ -788,6 +788,58 @@ aside.clients img {
     margin: 50px auto;
 }
 
+
+.date-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border: 1px solid #ccc;
+  gap: 30px;
+  text-align: center;
+}
+
+.date-side {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.date-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0 20px;
+}
+
+.date-center .month {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.date-center .day {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+}
+
+.date-center .year {
+  font-size: 12px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+
+
+
 /*
 section#contact {
     background-color: #222;
