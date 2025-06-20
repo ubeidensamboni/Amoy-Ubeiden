@@ -843,15 +843,7 @@ aside.clients img {
   align-items: center;
   justify-content: center;
   margin: 40px auto;
-  font-size: 20px;
   gap: 10px;
-}
-
-.decorative-divider .line {
-  flex: 1;
-  height: 1px;
-  background-color: #daa520;
-  max-width: 200px;
 }
 
 .decorative-divider .dot {
@@ -859,6 +851,13 @@ aside.clients img {
   height: 6px;
   background-color: #daa520;
   border-radius: 50%;
+}
+
+.decorative-divider .line {
+  flex: 1;
+  height: 1px;
+  background-color: #daa520;
+  max-width: 150px;
 }
 
 .decorative-divider .heart {
