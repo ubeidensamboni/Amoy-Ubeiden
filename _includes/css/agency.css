@@ -837,7 +837,35 @@ aside.clients img {
   letter-spacing: 1px;
 }
 
+/*  Decorative Heart Divider */
+.decorative-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  font-size: 20px;
+  gap: 10px;
+}
 
+.decorative-divider .line {
+  flex: 1;
+  height: 1px;
+  background-color: #daa520;
+  max-width: 200px;
+}
+
+.decorative-divider .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #daa520;
+  border-radius: 50%;
+}
+
+.decorative-divider .heart {
+  color: #daa520;
+  font-size: 22px;
+  line-height: 1;
+}
 
 
 
