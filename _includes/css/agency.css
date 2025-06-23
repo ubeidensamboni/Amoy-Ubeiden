@@ -461,24 +461,35 @@ header .intro-text .intro-heading {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0;           /* reset default margins */
   display: inline-block;
   text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* Customize font-sizes as needed */
+/* Container to align text properly */
+.passport-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+}
+
+/* Title style */
 .gradient-title {
-  @extend .gradient-text;
   font-size: 50px;
   letter-spacing: 8px;
 }
 
+/* Subtitle aligned with title */
 .gradient-subtitle {
-  @extend .gradient-text;
   font-size: 20px;
   letter-spacing: 4px;
+  width: 100%;
 }
-/* Gradient in our name and font*/
+
+/* Gradient in our NAMES and font*/
 .gradient-script {
   font-family: 'Parisienne', cursive;
   font-size: 75px;
