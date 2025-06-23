@@ -522,14 +522,14 @@ header .intro-text .intro-heading {
 .passport-icon {
   display: block;
   margin: 0 auto;
-  max-width: 20px;
+  max-width: 30px;
   width: 100%;
   height: auto;
 }
 
 @media (min-width: 1024px) {
   .passport-icon {
-    max-width: 35px;
+    max-width: 50px;
   }
 }
 
