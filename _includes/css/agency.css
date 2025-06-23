@@ -487,6 +487,7 @@ header .intro-text .intro-heading {
 /* Gradient in our NAMES and font*/
 .gradient-script {
   font-family: 'Parisienne', cursive;
+  font-weight: normal;
   font-size: 8vw;
   line-height: 1;
   background: linear-gradient(
