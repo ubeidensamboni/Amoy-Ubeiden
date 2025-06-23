@@ -489,6 +489,9 @@ header .intro-text .intro-heading {
   font-family: 'Parisienne', cursive;
   font-weight: normal;
   font-size: 8vw;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
   line-height: 1;
   background: linear-gradient(
     to right,
