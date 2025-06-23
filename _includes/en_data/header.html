@@ -20,20 +20,17 @@
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       overflow-x: hidden;
     }
-    #invitation-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #6d1a14;
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 0;
-    }
+    #invitation-overlay, .main-cover, body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  background: #6d1a14;     /* match your background */
+  margin: 0;
+  padding: 0;
+}
     .overlay-content {
       display: flex;
       flex-direction: column;
