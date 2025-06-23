@@ -470,13 +470,13 @@ header .intro-text .intro-heading {
 .gradient-title {
   @extend .gradient-text;
   font-size: 50px;
-  letter-spacing: 4px;
+  letter-spacing: 8px;
 }
 
 .gradient-subtitle {
   @extend .gradient-text;
   font-size: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 
 
