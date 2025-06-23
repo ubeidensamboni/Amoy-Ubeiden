@@ -1,0 +1,113 @@
+<!-- invitation.html -->
+<div id="invitation-overlay">
+  <h1 class="title">PASSPORT</h1>
+  <h3 style="margin-top: 30px;">YOU ARE INVITED</h3>
+  <img src="/Amoy-Ubeiden/img/backgrounds/logo1.png" alt="Couple Photo" style="margin: 30px 0; width: 60%; max-width: 300px; height: auto;">
+  <h4 style="margin-top: 10px;">TO THE WEDDING OF</h4>
+  <h1 class="intro-heading" style="margin-top: 40px; margin-bottom: 60px; font-weight: normal;">Amoy & Ubeiden</h1>
+
+  <button onclick="openMainSite()" style="
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #daa520;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  ">
+    <span class="jumping-envelope" aria-hidden="true">📩</span>
+    Open Invitation
+  </button>
+</div>
+
+<style>
+  #invitation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #5b1b0e;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+
+  #invitation-overlay h4,
+  #invitation-overlay h3,
+  #invitation-overlay h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  #invitation-overlay h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  #invitation-overlay h3 {
+    font-size: 20px;
+  }
+
+  #invitation-overlay h1.title {
+    font-size: 48px;
+    letter-spacing: 4px;
+  }
+
+  #invitation-overlay img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+
+  #invitation-overlay .names {
+    font-family: 'stay_classy_sldtregular';
+    font-size: 75px;
+    line-height: 75px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0 0 20px;
+  }
+
+  .jumping-envelope {
+    display: inline-block;
+    margin-right: 10px;
+    animation: jump 1s infinite;
+    font-size: 1.3em;
+    vertical-align: middle;
+  }
+
+  @keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+</style>
+
+<script>
+  function openMainSite() {
+    const overlay = document.getElementById('invitation-overlay');
+    if (overlay) {
+      overlay.style.display = 'none';
+      sessionStorage.setItem('invitationOpened', 'true');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (sessionStorage.getItem('invitationOpened') === 'true') {
+      const overlay = document.getElementById('invitation-overlay');
+      if (overlay) overlay.style.display = 'none';
+    }
+  });
+</script>
