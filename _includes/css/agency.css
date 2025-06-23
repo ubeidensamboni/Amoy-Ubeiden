@@ -520,14 +520,14 @@ header .intro-text .intro-heading {
 
 /* Passport Icon BioMetric */
 .passport-icon {
-  max-width: 60px;
+  max-width: 20px;
   width: 100%;
   height: auto;
 }
 
 @media (min-width: 1024px) {
   .passport-icon {
-    max-width: 60px;
+    max-width: 35px;
   }
 }
 
