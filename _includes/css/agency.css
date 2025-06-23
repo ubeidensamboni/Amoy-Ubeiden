@@ -492,8 +492,6 @@ header .intro-text .intro-heading {
 /* Gradient in our NAMES and font*/
 .gradient-script {
   font-family: 'Parisienne', cursive;
-  font-size: 75px;
-  line-height: 75px;
   background: linear-gradient(
     to right,
     rgba(233, 156, 5, 1),
@@ -504,12 +502,19 @@ header .intro-text .intro-heading {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 4px #00000033; /* Optional: soft glow shadow */
+  text-shadow: 2px 2px 4px #00000033;
   text-align: center;
-  white-space: nowrap;
-  margin: 40px 0 60px;
   font-weight: normal;
+  margin: 40px auto 60px;
+  display: block;
+  white-space: normal;
+  width: 90vw;
+  max-width: 100%;
+  font-size: clamp(32px, 10vw, 75px); /* responsive font size */
+  line-height: 1.2;
+  word-break: break-word;
 }
+
 
 
 
