@@ -447,10 +447,10 @@ header .intro-text .intro-heading {
 }
 
 
- /* This for font in passport cover */
+ /* Text in cover passport */
 .gradient-text {
   font-family: 'Times New Roman', serif;
-  font-weight: bold;
+  font-weight: normal;
   background: linear-gradient(
     to right,
     rgba(233, 156, 5, 1),
