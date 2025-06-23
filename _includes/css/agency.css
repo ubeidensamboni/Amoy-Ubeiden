@@ -478,13 +478,13 @@ header .intro-text .intro-heading {
 
 /* Title style */
 .gradient-title {
-  font-size: 50px;
+  font-size: 70px;
   letter-spacing: 8px;
 }
 
 /* Subtitle aligned with title */
 .gradient-subtitle {
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 4px;
   width: 100%;
 }
