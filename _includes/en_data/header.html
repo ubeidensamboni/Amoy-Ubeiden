@@ -4,165 +4,272 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amoy & Ubeiden</title>
-  <!-- Google Font for names -->
-  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: #6d1a14;
-      box-sizing: border-box;
-    }
     body {
-      min-height: 100vh;
-      width: 100vw;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      overflow-x: hidden;
-    }
-    #invitation-overlay, .main-cover, body {
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical centering */
-  align-items: center;     /* horizontal centering */
-  background: #6d1a14;     /* match your background */
-  margin: 0;
-  padding: 0;
-}
-    .overlay-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
-    }
-    .passport-header {
-      margin-bottom: 18px;
-    }
-    .passport-title {
-      font-family: 'Times New Roman', serif;
-      font-size: 22px;
-      letter-spacing: 0.3em;
-      color: #ffe080;
       margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    .navbar {
+      background-color: #000000;
+      border-bottom: 1px solid #333333;
+    }
+
+    .navbar .btn-m {
+      padding: 5px 10px;
+      background-color: gold;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    header {
+      background-image: url('/Amoy-Ubeiden/img/backgrounds/welcome.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-attachment: fixed;
+      color: white;
       text-align: center;
+      padding: 100px 20px;
+      position: relative;
+      overflow: hidden;
     }
-    .passport-subtitle {
-      font-family: 'Times New Roman', serif;
-      font-size: 13px;
-      letter-spacing: 0.18em;
-      color: #ffe080;
-      margin: 0 0 10px 0;
+
+    .intro-text {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .intro-heading {
+      font-size: 75px;
+      line-height: 75px;
+      font-family: 'stay_classy_sldtregular';
+      text-shadow: 2px 2px 4px #000000;
+      color: white;
       text-align: center;
+      white-space: nowrap;
+      padding-bottom: 15px;
     }
-    .passport-globe {
-      width: 220px;
-      max-width: 70vw;
-      margin: 0 0 18px 0;
-      display: block;
-    }
-    .names {
-      font-family: 'Parisienne', cursive;
-      font-size: 38px;
-      color: #ffe080;
-      margin: 10px 0 16px 0;
-      text-align: center;
-      letter-spacing: 0.04em;
-    }
-    .passport-icon {
-      width: 38px;
-      height: 38px;
-      margin: 0 0 18px 0;
-      display: block;
-    }
-    .open-invitation-btn {
-      padding: 16px 40px;
-      font-size: 22px;
-      background-color: #daa520;
+
+    .btn-xl {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: gold;
       color: #fff;
       border: none;
-      border-radius: 30px;
-      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    .countdown-embed {
+      max-width: 800px;
+      margin: 40px auto 20px;
+    }
+
+    /* Invitation Overlay */
+    #invitation-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #5b1b0e;
+      z-index: 9999;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: inherit;
-      margin-top: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-      transition: background 0.2s;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      color: white;
     }
-    .open-invitation-btn:hover {
-      background: #b8860b;
+
+    #invitation-overlay h4,
+    #invitation-overlay h3,
+    #invitation-overlay h1 {
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 5px 0;
     }
-    .envelope-icon {
+
+    #invitation-overlay h4 {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    #invitation-overlay h3 {
+      font-size: 20px;
+    }
+
+    #invitation-overlay h1.title {
+      font-size: 48px;
+      letter-spacing: 4px;
+    }
+
+    #invitation-overlay img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    #invitation-overlay .names {
+      font-family: 'stay_classy_sldtregular';
+      font-size: 75px;
+      line-height: 75px;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      margin: 0 0 20px;
+    }
+
+    .jumping-envelope {
+      display: inline-block;
       margin-right: 10px;
-      font-size: 1.3em;
       animation: jump 1s infinite;
+      font-size: 1.3em;
       vertical-align: middle;
     }
+
     @keyframes jump {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-10px); }
     }
-    /* Responsive adjustments */
-    @media (min-width: 700px) {
-      .overlay-content {
-        max-width: 480px;
-      }
-      .passport-title { font-size: 28px; }
-      .passport-subtitle { font-size: 16px; }
-      .passport-globe { width: 300px; }
-      .names { font-size: 54px; }
-      .passport-icon { width: 48px; height: 48px; }
-      .open-invitation-btn { font-size: 26px; padding: 20px 60px; }
-    }
-    @media (max-width: 400px) {
-      .passport-title { font-size: 16px; }
-      .passport-subtitle { font-size: 10px; }
-      .passport-globe { width: 140px; }
-      .names { font-size: 26px; }
-      .passport-icon { width: 28px; height: 28px; }
-      .open-invitation-btn { font-size: 16px; padding: 10px 20px; }
-    }
   </style>
 </head>
 <body>
-  <!-- Invitation Overlay -->
-  <div id="invitation-overlay">
-    <div class="overlay-content">
-      <div class="passport-header">
-        <div class="passport-title">PASSPORT</div>
-        <div class="passport-subtitle">WEDDING INVITATION</div>
-      </div>
-      <!-- Replace with your globe image or SVG -->
-      <img src="/Amoy-Ubeiden/img/backgrounds/logo1.png" alt="Globe" class="passport-globe">
-      <div class="names">Amoy & Ubeiden</div>
-      <!-- Replace with your biometric icon -->
-      <img src="/Amoy-Ubeiden/img/backgrounds/logo2.png" alt="bioMetric" class="passport-icon">
-      <button class="open-invitation-btn" onclick="openMainSite()">
-        <span class="envelope-icon" aria-hidden="true">📩</span>
-        Open Invitation
+
+<!-- Invitation Overlay -->
+<div id="invitation-overlay">
+  <h1 class="title">PASSPORT</h1>
+  <h3 style="margin-top: 30px;">YOU ARE INVITED</h3>
+  <img src="/Amoy-Ubeiden/img/backgrounds/logo1.png" alt="Couple Photo" style="margin: 30px 0; width: 60%; max-width: 300px; height: auto;">
+  <h4 style="margin-top: 10px;">TO THE WEDDING OF</h4>
+  <h1 class="intro-heading" style="margin-top: 40px; margin-bottom: 60px; font-weight: normal;">Amoy & Ubeiden</h1>
+
+  <button onclick="openMainSite()" style="
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #daa520;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  ">
+    <span class="jumping-envelope" aria-hidden="true">📩</span>
+    Open Invitation
+  </button>
+</div>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
+      <span>
+        <a class="brand page-scroll" href="#page-top" style="text-decoration:none">
+          <img src="/Amoy-Ubeiden/img/backgrounds/logo.png" alt="Amoy & Ubeiden Logo" style="height: 50px;">
+        </a>
+        <a href="{{ site.baseurl }}/en" class="btn-m">EN</a>
+        <a href="{{ site.baseurl }}/fr" class="btn-m">ES</a>
+      </span>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"><a href="#page-top"></a></li>
+        <li><a class="page-scroll" href="#saveDay">Save The Day</a></li>
+        <li><a class="page-scroll" href="#our_story">Our Story</a></li>
+        <li><a class="page-scroll" href="#events">Wedding Day</a></li>
+        <li><a class="page-scroll" href="#travel">Travel & Stay</a></li>
+        <li><a class="page-scroll hidden-xs hidden-sm" href="#portfolio">Things To Do</a></li>
+        <li><a class="page-scroll" href="#FAQ">FAQ</a></li>
+      </ul>
     </div>
   </div>
-  <script>
-    function openMainSite() {
-      const overlay = document.getElementById('invitation-overlay');
-      if (overlay) {
-        overlay.style.display = 'none';
-        sessionStorage.setItem('invitationOpened', 'true');
-      }
+</nav>
+
+<!-- Header -->
+<header>
+  <div style="
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;">
+  </div>
+
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="intro-text">
+      <div class="intro-heading">Amoy & Ubeiden<br>are getting married</div>
+
+      <div class="countdown-embed">
+        <script>
+          (function(d, s, id) {
+            var js, pjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//www.tickcounter.com/static/js/loader.js";
+            pjs.parentNode.insertBefore(js, pjs);
+          }(document, "script", "tickcounter-sdk"));
+        </script>
+
+        <a 
+          data-type="countdown" 
+          data-id="7506491" 
+          class="tickcounter" 
+          style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:12%; margin:0 auto; border:none;" 
+          title="Big Day" 
+          href="//www.tickcounter.com/"
+        >
+          Big Day
+        </a>
+      </div>
+
+      <a href="#saveDay" class="page-scroll btn btn-xl" style=" margin-top: 60px; background-color: #daa520; color: white; font-size: 30px; padding: 10px 20px; border-radius: 50px;">
+        Save the Date!
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Overlay hide logic -->
+<script>
+  function openMainSite() {
+    const overlay = document.getElementById('invitation-overlay');
+    if (overlay) {
+      overlay.style.display = 'none';
+      sessionStorage.setItem('invitationOpened', 'true');
     }
-    document.addEventListener('DOMContentLoaded', () => {
-      if (sessionStorage.getItem('invitationOpened') === 'true') {
-        const overlay = document.getElementById('invitation-overlay');
-        if (overlay) overlay.style.display = 'none';
-      }
-    });
-  </script>
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (sessionStorage.getItem('invitationOpened') === 'true') {
+      const overlay = document.getElementById('invitation-overlay');
+      if (overlay) overlay.style.display = 'none';
+    }
+  });
+</script>
+
 </body>
 </html>
+
