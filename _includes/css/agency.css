@@ -446,6 +446,40 @@ header .intro-text .intro-heading {
     }
 }
 
+
+ /* This for font in passport cover */
+.gradient-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 50px;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    rgba(233, 156, 5, 1),
+    rgba(255, 240, 160, 1),
+    rgba(248, 191, 51, 1),
+    rgba(255, 240, 160, 1),
+    rgba(244, 174, 0, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.gradient-subtitle {
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-top: -5px;
+}
+
+
+
+
 section {
     padding: 20px 0;
 }
