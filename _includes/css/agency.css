@@ -382,14 +382,14 @@ fieldset[disabled] .btn-m.active {
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
-  letter-spacing: 4px; /* 👈 Adds space between letters */
+  letter-spacing: 6px; /* 👈 Adds space between letters */
 }
 
 /*  OUR NAMES in INVITATION }*/
 .gradient-script {
   font-family: 'Parisienne', cursive;
   font-weight: normal;
-  font-size: clamp(36px, 16vw, 64px); /* 👈 Increased min and max size */
+  font-size: clamp(36px, 16vw, 48px); /* 👈 Increased min and max size */
   overflow-wrap: break-word;
   word-break: break-word;
   white-space: normal;
