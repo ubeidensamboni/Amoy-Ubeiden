@@ -389,7 +389,7 @@ fieldset[disabled] .btn-m.active {
 .gradient-script {
   font-family: 'Parisienne', cursive;
   font-weight: normal;
-  font-size: clamp(36px, 8vw, 64px); /* 👈 Increased min and max size */
+  font-size: clamp(36px, 16vw, 64px); /* 👈 Increased min and max size */
   overflow-wrap: break-word;
   word-break: break-word;
   white-space: normal;
