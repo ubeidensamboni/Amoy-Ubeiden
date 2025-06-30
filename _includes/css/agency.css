@@ -382,6 +382,7 @@ fieldset[disabled] .btn-m.active {
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
+  letter-spacing: 4px; /* 👈 Adds space between letters */
 }
 
 /*  OUR NAMES in INVITATION }*/
