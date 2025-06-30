@@ -375,6 +375,7 @@ fieldset[disabled] .btn-m.active {
 .gradient-text {
   font-family: 'Times New Roman', serif;
   font-weight: normal;
+  font-size: clamp(36px, 16vw, 48px); /* 👈 Increased min and max size */
   background: var(--gold-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
