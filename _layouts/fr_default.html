@@ -4,12 +4,13 @@
   {% include /fr_data/head.html %}
 
   <body id="page-top" class="index">
-    
+    {% comment %}
     {% include /fr_data/invitation.html %}
+    {% endcomment %}
     {% include /fr_data/header.html %}
     {% include /fr_data/saveDay.html %}
     
-    {% comment %}
+    
     {% include /fr_data/our_story.html %}
     {% include /fr_data/events.html %}
     {% include /fr_data/travel.html %}
@@ -18,7 +19,7 @@
     {% include /fr_data/FAQ.html %}
     {% include /fr_data/footer.html %}
     {% include /fr_data/modals.html %}
-    {% endcomment %}
+    
     
     {% include /fr_data/js.html %}
     {% if jekyll.environment == 'production' %}
