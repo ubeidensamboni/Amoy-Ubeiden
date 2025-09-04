@@ -4,11 +4,12 @@
   {% include /en_data/head.html %}
 
   <body id="page-top" class="index">
+    {% comment %}
     {% include /en_data/invitation.html %}
+    {% endcomment %}
     {% include /en_data/header.html %}
     {% include /en_data/saveDay.html %}
     
-    {% comment %}
     {% include /en_data/our_story.html %}
     {% include /en_data/events.html %}
     
@@ -19,7 +20,7 @@
     {% include /en_data/FAQ.html %}
     {% include /en_data/footer.html %}
     {% include /en_data/modals.html %}
-    {% endcomment %}
+    
     {% include /en_data/js.html %}
     {% if jekyll.environment == 'production' %}
         {% include analytics.html %}
