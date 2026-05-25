@@ -1,251 +1,268 @@
 <!-- Events Section -->
 <section id="events" style="background-image: url('/Amoy-Ubeiden/img/backgrounds/background.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-  <style>
-    .timeline {
-      list-style: none;
-      padding: 0;
-      margin: 0 auto;
-      max-width: 1000px;
-      position: relative;
-    }
 
-    /* Vertical line */
+<style>
+
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+  }
+
+  /* Vertical white line */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
+  .timeline > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Alternate desktop layout */
+  .timeline > li.timeline-inverted {
+    flex-direction: row-reverse;
+  }
+
+  /* Circle */
+  .timeline-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background: #d4af37;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+
+  .timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+  }
+
+  /* Text panel */
+  .timeline-panel {
+    width: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  .timeline-panel .timeline-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .timeline-heading h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+  }
+
+  .timeline-heading .subheading {
+    font-size: 17px;
+    color: #ddd;
+    margin: 0;
+  }
+
+  /* ========================= */
+  /* 📱 MOBILE VERSION */
+  /* ========================= */
+
+  @media (max-width: 767px) {
+
     .timeline::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background-color: white;
       left: 50%;
       transform: translateX(-50%);
-      z-index: 0;
     }
 
-    .timeline > li {
+    .timeline > li,
+    .timeline > li.timeline-inverted {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      flex-wrap: nowrap;
-      margin-bottom: 40px;
-      gap: 10px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .timeline > li.timeline-inverted {
-      flex-direction: row-reverse;
+      text-align: center;
+      margin-bottom: 80px;
+      gap: 15px;
     }
 
     .timeline-image {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       width: 120px;
       height: 120px;
-      border-radius: 50%;
-      border: 4px solid white;
-      background: #d4af37;
-      margin-bottom: 60px;
-      overflow: hidden;
-      flex-shrink: 0;
-      z-index: 2;
-    }
-
-    .timeline-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: 50%;
-      display: block;
+      margin: 0;
     }
 
     .timeline-panel {
-      flex-grow: 1;
-      padding: 0 10px;
-      color: white;
+      width: 100%;
+      padding: 0;
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      align-items: center;
+      background: none;
+      box-shadow: none;
     }
 
     .timeline-panel .timeline-heading {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 4px;
+      align-items: center;
+      text-align: center;
+      width: 100%;
     }
 
     .timeline-heading h4 {
-      font-size: 20px;
-      font-weight: bold;
+      font-size: 22px;
+      line-height: 1.2;
       margin: 0;
-      color: white;
+      word-break: break-word;
     }
 
     .timeline-heading .subheading {
-      font-size: 15px;
-      color: #ccc;
-      margin: 0;
+      font-size: 16px;
+      margin-top: 5px;
+      color: #ddd;
     }
+  }
 
-    /* 📱 Mobile view */
-    @media (max-width: 767px) {
-      .timeline > li,
-      .timeline > li.timeline-inverted {
-        display: block; /* Stack children vertically */
-        margin-bottom: 60px;
-      }
-      .timeline-image {
-        margin: 0 auto 12px auto; /* Center and space below image */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .timeline-panel {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: none;
-        box-shadow: none;
-        margin-top: 0;
-        padding: 0;
-      }
-      .timeline-panel .timeline-heading {
-        align-items: center;
-        padding: 0;
-      }
-      .timeline-heading h4,
-      .timeline-heading .subheading {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        word-break: break-word;
-      }
-    }
+</style>
 
+<div class="container">
 
-  </style>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Laboratorio del "Sí, acepto"</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image">
-              <img src="/Amoy-Ubeiden/img/events/1.png" alt="Ceremony">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Inicio de la Reacción</h4>
-                <h4 class="subheading">3:00 PM</h4>
-              </div>
-            </div>
-          </li>
-
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <img src="/Amoy-Ubeiden/img/events/2.png" alt="Cocktail">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Encuentro Molecular</h4>
-                <h4 class="subheading">4:00 PM</h4>
-              </div>
-            </div>
-          </li>
-
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <img src="/Amoy-Ubeiden/img/events/6.png" alt="First Dance">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Reacción Dulce</h4>
-                <h4 class="subheading">5:40 PM</h4>
-              </div>
-            </div>
-          </li>
-          
-          <li>
-            <div class="timeline-image">
-              <img src="/Amoy-Ubeiden/img/events/3.png" alt="Dinner">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Recarga de Energía</h4>
-                <h4 class="subheading">6:00 PM</h4>
-              </div>
-            </div>
-          </li>
-
-      
-          <!-- Comment
-          <li>
-            <div class="timeline-image">
-              <img src="/Amoy-Ubeiden/img/events/5.png" alt="Special Dance">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Baile especial</h4>
-                <h4 class="subheading">8:45 PM</h4>
-              </div>
-            </div>
-          </li>
-          -->
-          <li>
-            <div class="timeline-image">
-              <img src="/Amoy-Ubeiden/img/events/4.png" alt="Cake Cutting">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Sincronización Perfecta</h4>
-                <h4 class="subheading">7:40 PM</h4>
-              </div>
-            </div>
-          </li>
-          <!-- Comment
-          <li>
-            <div class="timeline-image">
-              <img src="/Amoy-Ubeiden/img/events/7.png" alt="Party Games">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Juegos!</h4>
-                <h4 class="subheading">9:20 PM</h4>
-              </div>
-            </div>
-          </li>
-          -->
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <img src="/Amoy-Ubeiden/img/events/8.png" alt="Dance">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Explosión de Energía!</h4>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+  <!-- Title -->
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading">
+        Laboratorio del "Sí, acepto"
+      </h2>
     </div>
   </div>
 
-  <!-- Decorative Divider -->
-      <div class="decorative-divider">
-        <div class="dot"></div>
-        <div class="line"></div>
-        <div class="heart">❤️</div>
-        <div class="line"></div>
-        <div class="dot"></div>
-      </div>
-  
+  <!-- Timeline -->
+  <div class="row">
+    <div class="col-lg-12">
+
+      <ul class="timeline">
+
+        <!-- Event 1 -->
+        <li>
+          <div class="timeline-image">
+            <img src="/Amoy-Ubeiden/img/events/1.png" alt="Ceremony">
+          </div>
+
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Inicio de la Reacción</h4>
+              <h4 class="subheading">3:00 PM</h4>
+            </div>
+          </div>
+        </li>
+
+        <!-- Event 2 -->
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img src="/Amoy-Ubeiden/img/events/2.png" alt="Cocktail">
+          </div>
+
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Encuentro Molecular</h4>
+              <h4 class="subheading">4:00 PM</h4>
+            </div>
+          </div>
+        </li>
+
+        <!-- Event 3 -->
+        <li>
+          <div class="timeline-image">
+            <img src="/Amoy-Ubeiden/img/events/6.png" alt="Cake">
+          </div>
+
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Reacción Dulce</h4>
+              <h4 class="subheading">5:40 PM</h4>
+            </div>
+          </div>
+        </li>
+
+        <!-- Event 4 -->
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img src="/Amoy-Ubeiden/img/events/3.png" alt="Dinner">
+          </div>
+
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Recarga de Energía</h4>
+              <h4 class="subheading">6:00 PM</h4>
+            </div>
+          </div>
+        </li>
+
+        <!-- Event 5 -->
+        <li>
+          <div class="timeline-image">
+            <img src="/Amoy-Ubeiden/img/events/4.png" alt="Dance">
+          </div>
+
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Sincronización Perfecta</h4>
+              <h4 class="subheading">7:40 PM</h4>
+            </div>
+          </div>
+        </li>
+
+        <!-- Event 6 -->
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img src="/Amoy-Ubeiden/img/events/8.png" alt="Party">
+          </div>
+
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Explosión de Energía!</h4>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Decorative Divider -->
+<div class="decorative-divider">
+  <div class="dot"></div>
+  <div class="line"></div>
+  <div class="heart">❤️</div>
+  <div class="line"></div>
+  <div class="dot"></div>
+</div>
+
 </section>
