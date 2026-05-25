@@ -97,32 +97,47 @@ function resize() {
 window.addEventListener("resize", resize);
 resize();
 
+/* 💛 CREATE HEART PARTICLES */
 function createParticles() {
   particles = [];
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 25; i++) {
     particles.push({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      r: Math.random() * 2.5 + 0.5,
+      size: Math.random() * 14 + 8,
       speed: Math.random() * 0.6 + 0.2,
       drift: Math.random() * 0.6 - 0.3,
-      alpha: Math.random()
+      alpha: Math.random() * 0.6 + 0.2
     });
   }
 }
 
 createParticles();
 
+/* 💛 DRAW HEART */
+function drawHeart(x, y, size, alpha) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.fillStyle = "rgba(212,175,55,1)"; // gold
+
+  ctx.translate(x, y);
+  ctx.scale(size / 20, size / 20);
+
+  ctx.beginPath();
+  ctx.moveTo(0, 0);
+
+  ctx.bezierCurveTo(-10, -10, -20, 0, 0, 15);
+  ctx.bezierCurveTo(20, 0, 10, -10, 0, 0);
+
+  ctx.fill();
+  ctx.restore();
+}
+
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  ctx.fillStyle = "rgba(212,175,55,0.8)";
-
   particles.forEach(p => {
-    ctx.globalAlpha = p.alpha;
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fill();
+    drawHeart(p.x, p.y, p.size, p.alpha);
   });
 
   update();
@@ -130,11 +145,11 @@ function draw() {
 
 function update() {
   particles.forEach(p => {
-    p.y -= p.speed;     // upward motion
-    p.x += p.drift;     // natural side drift
+    p.y -= p.speed;
+    p.x += p.drift;
 
-    if (p.y < 0) {
-      p.y = canvas.height;
+    if (p.y < -20) {
+      p.y = canvas.height + 20;
       p.x = Math.random() * canvas.width;
     }
 
