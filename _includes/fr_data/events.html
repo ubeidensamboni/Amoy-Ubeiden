@@ -4,7 +4,7 @@
 <style>
 
 /* =========================
-   TIMELINE BASE (SCOPED ONLY TO EVENTS)
+   BASE TIMELINE (SCOPED)
 ========================= */
 
 #events .timeline {
@@ -15,7 +15,7 @@
   position: relative;
 }
 
-/* vertical line */
+/* vertical center line */
 #events .timeline::before {
   content: "";
   position: absolute;
@@ -29,25 +29,31 @@
 }
 
 /* =========================
-   DESKTOP LAYOUT FIX
+   DESKTOP LAYOUT
 ========================= */
 
 #events .timeline > li {
-  display: flex !important;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 60px;
+  justify-content: center; /* IMPORTANT */
+  gap: 60px;
+  margin-bottom: 70px;
   position: relative;
   z-index: 1;
 }
 
-/* alternate sides */
+/* normal (left side text) */
+#events .timeline > li:not(.timeline-inverted) {
+  flex-direction: row;
+}
+
+/* inverted (right side text) */
 #events .timeline > li.timeline-inverted {
   flex-direction: row-reverse;
 }
 
 /* =========================
-   ICON
+   ICON (CENTER PIECE)
 ========================= */
 
 #events .timeline-image {
@@ -56,13 +62,16 @@
   border-radius: 50%;
   border: 4px solid white;
   background: #d4af37;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   overflow: hidden;
   flex-shrink: 0;
-  z-index: 2;
+
   position: relative;
+  z-index: 2;
 }
 
 #events .timeline-image img {
@@ -73,7 +82,7 @@
 }
 
 /* =========================
-   TEXT
+   TEXT PANEL
 ========================= */
 
 #events .timeline-panel {
@@ -82,14 +91,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0;
 }
 
-/* headings */
 #events .timeline-heading h4 {
   margin: 0;
   font-size: 20px;
   font-weight: bold;
+  color: white;
 }
 
 #events .timeline-heading .subheading {
@@ -99,7 +107,7 @@
 }
 
 /* =========================
-   🔥 MOBILE FIX (THIS IS THE KEY)
+   📱 MOBILE FIX
 ========================= */
 
 @media (max-width: 767px) {
@@ -115,20 +123,17 @@
 
   #events .timeline-panel {
     width: 100% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
-  #events .timeline-heading {
-    text-align: center;
+  #events .timeline::before {
+    left: 50%;
   }
-
 }
 
 </style>
 
 <div class="container">
+
   <div class="row">
     <div class="col-lg-12 text-center">
       <h2 class="section-heading">Laboratorio del "Sí, acepto"</h2>
@@ -215,6 +220,7 @@
 
     </div>
   </div>
+
 </div>
 
 </section>
