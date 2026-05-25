@@ -3,157 +3,136 @@
 
 <style>
 
-  .timeline {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 1000px;
-    position: relative;
-  }
+/* =========================
+   TIMELINE BASE
+========================= */
 
-  /* Vertical white line */
-  .timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background-color: white;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 0;
-  }
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+}
 
-  .timeline > li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 60px;
-    gap: 40px;
-    position: relative;
-    z-index: 1;
-  }
+/* Center vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  background: white;
+  z-index: 0;
+}
 
-  /* Alternate desktop layout */
-  .timeline > li.timeline-inverted {
-    flex-direction: row-reverse;
-  }
+/* Each item */
+.timeline > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
 
-  /* Circle */
-  .timeline-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 5px solid white;
-    background: #d4af37;
-    overflow: hidden;
-    flex-shrink: 0;
-    z-index: 2;
-  }
+/* Alternate layout (desktop) */
+.timeline > li.timeline-inverted {
+  flex-direction: row-reverse;
+}
 
-  .timeline-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 50%;
-    display: block;
-  }
+/* =========================
+   ICON
+========================= */
 
-  /* Text panel */
-  .timeline-panel {
-    width: 300px;
-    color: white;
-    display: flex;
-    align-items: center;
-  }
+.timeline-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  z-index: 2;
+}
 
-  .timeline-panel .timeline-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
+.timeline-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
-  .timeline-heading h4 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-    color: white;
-  }
+/* =========================
+   TEXT
+========================= */
 
-  .timeline-heading .subheading {
-    font-size: 17px;
-    color: #ddd;
-    margin: 0;
-  }
+.timeline-panel {
+  width: 40%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
 
-  /* ========================= */
-  /* 📱 MOBILE VERSION */
-  /* ========================= */
+.timeline-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
-  @media (max-width: 767px) {
+.timeline-heading h4 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  @media (max-width: 767px) {
+.timeline-heading .subheading {
+  margin: 0;
+  font-size: 16px;
+  color: #ddd;
+}
 
-  /* Vertical center line */
-  .timeline::before {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 3px;
-  }
+/* =========================
+   MOBILE (CRITICAL FIX)
+========================= */
 
-  /* Stack everything vertically */
+@media (max-width: 767px) {
+
   .timeline > li,
   .timeline > li.timeline-inverted {
-    display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
-    justify-content: flex-start;
-    position: relative;
+    text-align: center;
+    gap: 15px;
     margin-bottom: 70px;
-    gap: 0;
   }
 
-  /* ICON */
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .timeline-image {
-    width: 120px;
-    height: 120px;
-    margin: 0;
-    position: relative;
-    z-index: 2;
+    width: 110px;
+    height: 110px;
   }
 
-  /* TEXT */
   .timeline-panel {
     width: 100%;
-    margin-top: 20px; /* space below icon */
-    padding: 0;
-    background: none;
-    box-shadow: none;
-    display: flex;
     justify-content: center;
-    align-items: center;
-  }
-
-  .timeline-panel .timeline-heading {
-    text-align: center;
-    align-items: center;
-    width: 100%;
   }
 
   .timeline-heading h4 {
-    margin: 0;
-    font-size: 22px;
-    line-height: 1.2;
-    color: white;
+    font-size: 20px;
   }
 
   .timeline-heading .subheading {
-    margin-top: 6px;
-    font-size: 16px;
-    color: #ddd;
+    font-size: 14px;
   }
 }
 
@@ -179,7 +158,7 @@
         <!-- Event 1 -->
         <li>
           <div class="timeline-image">
-            <img src="/Amoy-Ubeiden/img/events/1.png" alt="Ceremony">
+            <img src="/Amoy-Ubeiden/img/events/1.png" alt="">
           </div>
 
           <div class="timeline-panel">
@@ -193,7 +172,7 @@
         <!-- Event 2 -->
         <li class="timeline-inverted">
           <div class="timeline-image">
-            <img src="/Amoy-Ubeiden/img/events/2.png" alt="Cocktail">
+            <img src="/Amoy-Ubeiden/img/events/2.png" alt="">
           </div>
 
           <div class="timeline-panel">
@@ -207,7 +186,7 @@
         <!-- Event 3 -->
         <li>
           <div class="timeline-image">
-            <img src="/Amoy-Ubeiden/img/events/6.png" alt="Cake">
+            <img src="/Amoy-Ubeiden/img/events/6.png" alt="">
           </div>
 
           <div class="timeline-panel">
@@ -221,7 +200,7 @@
         <!-- Event 4 -->
         <li class="timeline-inverted">
           <div class="timeline-image">
-            <img src="/Amoy-Ubeiden/img/events/3.png" alt="Dinner">
+            <img src="/Amoy-Ubeiden/img/events/3.png" alt="">
           </div>
 
           <div class="timeline-panel">
@@ -235,7 +214,7 @@
         <!-- Event 5 -->
         <li>
           <div class="timeline-image">
-            <img src="/Amoy-Ubeiden/img/events/4.png" alt="Dance">
+            <img src="/Amoy-Ubeiden/img/events/4.png" alt="">
           </div>
 
           <div class="timeline-panel">
@@ -249,7 +228,7 @@
         <!-- Event 6 -->
         <li class="timeline-inverted">
           <div class="timeline-image">
-            <img src="/Amoy-Ubeiden/img/events/8.png" alt="Party">
+            <img src="/Amoy-Ubeiden/img/events/8.png" alt="">
           </div>
 
           <div class="timeline-panel">
@@ -264,15 +243,6 @@
     </div>
   </div>
 
-</div>
-
-<!-- Decorative Divider -->
-<div class="decorative-divider">
-  <div class="dot"></div>
-  <div class="line"></div>
-  <div class="heart">❤️</div>
-  <div class="line"></div>
-  <div class="dot"></div>
 </div>
 
 </section>
