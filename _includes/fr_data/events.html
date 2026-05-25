@@ -4,6 +4,21 @@
 <style>
 
 /* =========================
+   HARD RESET (IMPORTANT)
+========================= */
+
+.timeline,
+.timeline * {
+  box-sizing: border-box;
+}
+
+/* kill ANY old float/Bootstrap interference */
+.timeline > li,
+.timeline > li * {
+  float: none !important;
+}
+
+/* =========================
    TIMELINE BASE
 ========================= */
 
@@ -11,11 +26,11 @@
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
   position: relative;
 }
 
-/* Center vertical line */
+/* center line */
 .timeline::before {
   content: "";
   position: absolute;
@@ -28,18 +43,17 @@
   z-index: 0;
 }
 
-/* Each item */
+/* ITEM */
 .timeline > li {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 80px;
   position: relative;
   z-index: 1;
-  width: 100%;
 }
 
-/* Alternate layout (desktop) */
+/* invert */
 .timeline > li.timeline-inverted {
   flex-direction: row-reverse;
 }
@@ -62,6 +76,7 @@
   z-index: 2;
 }
 
+/* force image behavior */
 .timeline-image img {
   width: 100%;
   height: 100%;
@@ -75,30 +90,15 @@
 .timeline-panel {
   width: 40%;
   color: white;
+  padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
-}
-
-.timeline-heading {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.timeline-heading h4 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.timeline-heading .subheading {
-  margin: 0;
-  font-size: 16px;
-  color: #ddd;
+  justify-content: flex-start;
 }
 
 /* =========================
-   MOBILE (CRITICAL FIX)
+   MOBILE FIX (IMPORTANT)
 ========================= */
 
 @media (max-width: 767px) {
@@ -106,15 +106,14 @@
   .timeline > li,
   .timeline > li.timeline-inverted {
     flex-direction: column !important;
-    align-items: center;
+    align-items: center !important;
     text-align: center;
     gap: 15px;
-    margin-bottom: 70px;
   }
 
-  .timeline::before {
-    left: 50%;
-    transform: translateX(-50%);
+  .timeline-panel {
+    width: 100% !important;
+    justify-content: center;
   }
 
   .timeline-image {
@@ -122,17 +121,8 @@
     height: 110px;
   }
 
-  .timeline-panel {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .timeline-heading h4 {
-    font-size: 20px;
-  }
-
-  .timeline-heading .subheading {
-    font-size: 14px;
+  .timeline::before {
+    left: 50%;
   }
 }
 
