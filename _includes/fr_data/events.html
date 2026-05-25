@@ -4,50 +4,56 @@
 <style>
 
 /* =========================
-   TIMELINE BASE
+   HARD RESET (IMPORTANT)
+   kills Bootstrap timeline conflicts ONLY in events
+========================= */
+
+#events .timeline,
+#events .timeline * {
+  box-sizing: border-box;
+}
+
+/* remove old pseudo layout conflicts */
+#events .timeline::before,
+#events .timeline::after {
+  display: none !important;
+}
+
+/* =========================
+   TIMELINE CONTAINER
 ========================= */
 
 #events .timeline {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  max-width: 700px;
-  position: relative;
-}
-
-/* vertical line */
-#events .timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  background-color: white;
-  z-index: 0;
+  max-width: 600px;
 }
 
 /* =========================
-   EACH ITEM (STACKED)
+   EACH ITEM (STRICT STACK)
 ========================= */
 
 #events .timeline > li {
-  display: flex;
-  flex-direction: column;   /* 🔥 KEY FIX */
+  display: flex !important;
+  flex-direction: column !important;
   align-items: center;
   justify-content: center;
+
   text-align: center;
 
-  margin-bottom: 60px;
+  margin-bottom: 70px; /* 🔥 spacing prevents overlap */
   position: relative;
-  z-index: 1;
-  gap: 10px;
+
+  padding: 0;
 }
 
-/* remove inverted behavior completely */
-#events .timeline > li.timeline-inverted {
-  flex-direction: column;
+/* kill old bootstrap floats completely */
+#events .timeline > li .timeline-panel,
+#events .timeline > li .timeline-image {
+  float: none !important;
+  position: static !important;
+  margin: 0 !important;
 }
 
 /* =========================
@@ -57,6 +63,7 @@
 #events .timeline-image {
   width: 120px;
   height: 120px;
+
   border-radius: 50%;
   border: 4px solid white;
   background: #d4af37;
@@ -66,8 +73,8 @@
   justify-content: center;
 
   overflow: hidden;
+
   flex-shrink: 0;
-  z-index: 2;
 }
 
 #events .timeline-image img {
@@ -82,6 +89,7 @@
 
 #events .timeline-panel {
   width: 100%;
+  margin-top: 15px; /* 🔥 IMPORTANT spacing */
   color: white;
   display: flex;
   justify-content: center;
@@ -108,18 +116,38 @@
 }
 
 /* =========================
-   MOBILE (same behavior)
+   OPTIONAL CENTER LINE (visual only)
+========================= */
+
+#events .timeline {
+  position: relative;
+}
+
+#events .timeline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: white;
+  z-index: 0;
+}
+
+/* keep content above line */
+#events .timeline > li {
+  z-index: 1;
+}
+
+/* =========================
+   MOBILE (same layout)
 ========================= */
 
 @media (max-width: 767px) {
-
   #events .timeline > li {
-    flex-direction: column !important;
-    text-align: center;
-  }
-
-  #events .timeline-panel {
-    width: 100%;
+    margin-bottom: 60px;
   }
 }
 
