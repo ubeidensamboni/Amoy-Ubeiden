@@ -4,18 +4,18 @@
 <style>
 
 /* =========================
-   BASE TIMELINE (SCOPED)
+   TIMELINE BASE
 ========================= */
 
 #events .timeline {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 700px;
   position: relative;
 }
 
-/* vertical center line */
+/* vertical line */
 #events .timeline::before {
   content: "";
   position: absolute;
@@ -29,31 +29,29 @@
 }
 
 /* =========================
-   DESKTOP LAYOUT
+   EACH ITEM (STACKED)
 ========================= */
 
 #events .timeline > li {
   display: flex;
+  flex-direction: column;   /* 🔥 KEY FIX */
   align-items: center;
-  justify-content: center; /* IMPORTANT */
-  gap: 60px;
-  margin-bottom: 70px;
+  justify-content: center;
+  text-align: center;
+
+  margin-bottom: 60px;
   position: relative;
   z-index: 1;
+  gap: 10px;
 }
 
-/* normal (left side text) */
-#events .timeline > li:not(.timeline-inverted) {
-  flex-direction: row;
-}
-
-/* inverted (right side text) */
+/* remove inverted behavior completely */
 #events .timeline > li.timeline-inverted {
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
 /* =========================
-   ICON (CENTER PIECE)
+   ICON
 ========================= */
 
 #events .timeline-image {
@@ -69,8 +67,6 @@
 
   overflow: hidden;
   flex-shrink: 0;
-
-  position: relative;
   z-index: 2;
 }
 
@@ -78,19 +74,24 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  display: block;
 }
 
 /* =========================
-   TEXT PANEL
+   TEXT
 ========================= */
 
 #events .timeline-panel {
-  width: 40%;
+  width: 100%;
   color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+}
+
+#events .timeline-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
 #events .timeline-heading h4 {
@@ -107,26 +108,18 @@
 }
 
 /* =========================
-   📱 MOBILE FIX
+   MOBILE (same behavior)
 ========================= */
 
 @media (max-width: 767px) {
 
-  #events .timeline > li,
-  #events .timeline > li.timeline-inverted {
+  #events .timeline > li {
     flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center;
     text-align: center;
-    gap: 12px;
   }
 
   #events .timeline-panel {
-    width: 100% !important;
-  }
-
-  #events .timeline::before {
-    left: 50%;
+    width: 100%;
   }
 }
 
@@ -157,7 +150,7 @@
           </div>
         </li>
 
-        <li class="timeline-inverted">
+        <li>
           <div class="timeline-image">
             <img src="/Amoy-Ubeiden/img/events/2.png">
           </div>
@@ -181,7 +174,7 @@
           </div>
         </li>
 
-        <li class="timeline-inverted">
+        <li>
           <div class="timeline-image">
             <img src="/Amoy-Ubeiden/img/events/3.png">
           </div>
@@ -205,7 +198,7 @@
           </div>
         </li>
 
-        <li class="timeline-inverted">
+        <li>
           <div class="timeline-image">
             <img src="/Amoy-Ubeiden/img/events/8.png">
           </div>
